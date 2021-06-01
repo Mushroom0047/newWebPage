@@ -1,6 +1,13 @@
 .titulo {
   margin-bottom: 20px;
 }
+.sticky-top{
+  width: 100% !important;
+}
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 h1 {
   font-family: "Roboto Condensed", sans-serif;
   color: #777;
