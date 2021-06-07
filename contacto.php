@@ -15,17 +15,7 @@
         $contenido .= "Enviado el: " .date('d/m/y', time())."\r\n";
         $contenido .= $message;
 
-        $enviado = mail($para, $subject, $contenido);
-        if($enviado)
-            <script type="javascript"> 
-                alert("Contacto Registrado"); 
-            </script>             
-        else    
-            echo 'Error al enviar';
-
-        header("Location:index.html");
-    
+        mail($para, $subject, $contenido);
+        header("Location:gracias.html");
     }
-
-    
 ?>
