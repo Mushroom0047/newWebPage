@@ -101,3 +101,11 @@ section{
 .img-transfer{
   width: 80%;
 }
+.image-bg{
+  margin-top: 30vh;
+}
+.footer-gracias{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
