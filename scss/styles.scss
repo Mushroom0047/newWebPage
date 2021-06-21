@@ -1,0 +1,33 @@
+@import "components/global-var.scss";
+@import "components/navbar.scss";
+@import "components/footer"; 
+@import "components/icons";
+@import "components/tittles";
+@import "components/buttons";
+@import "components/form";
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    background-color: $dark-color;
+}
+strong {
+    color: $yellow-color;
+}
+#sec-00 {
+    margin-top: 100px;
+    height: 600px;
+}
+
+hr {
+    color: $yellow-color;
+    margin: 100px 0;
+}
+
+.hero-name {
+    margin-top: 120px;
+}
+
+.img-trabajos {
+    border-radius: 5px;
+}

@@ -1,0 +1,113 @@
+.nav-link {
+  color: #efefef !important;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  padding-left: 10px !important; }
+  .nav-link:hover {
+    background-color: #efefef;
+    color: #212529 !important;
+    border-radius: 5px; }
+
+/*FOOTER*/
+.footer-basic {
+  padding: 40px 0;
+  background-color: #161a1d !important; }
+  .footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #efefef;
+    margin-bottom: 0; }
+
+/* Icons */
+.knowledge i {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #dfac13;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  color: #efefef; }
+
+.social {
+  text-align: left;
+  padding-bottom: 25px; }
+
+.social-footer {
+  text-align: center;
+  padding-bottom: 25px; }
+
+.social-footer a, .social a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  margin: 0 8px;
+  color: #efefef; }
+
+.social > a:hover, .social-footer > a:hover {
+  background-color: #dfac13;
+  border-color: #dfac13; }
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  color: #efefef;
+  margin-bottom: 10px !important; }
+
+h3 {
+  color: #efefef;
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  color: #efefef; }
+
+.titulo {
+  margin-bottom: 20px; }
+
+.navbar-brand {
+  color: #efefef !important; }
+
+.btn-portafolio {
+  border-radius: 10px;
+  border: 2px solid #dfac13 !important;
+  margin-right: 10px; }
+  .btn-portafolio:hover {
+    background-color: #dfac13; }
+
+.btn {
+  color: #efefef;
+  padding: 5px 20px;
+  font-weight: bold; }
+  .btn:hover {
+    color: #212529; }
+
+.form-contact input, .form-contact textarea {
+  margin: 10px 0px; }
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  background-color: #212529; }
+
+strong {
+  color: #dfac13; }
+
+#sec-00 {
+  margin-top: 100px;
+  height: 600px; }
+
+hr {
+  color: #dfac13;
+  margin: 100px 0; }
+
+.hero-name {
+  margin-top: 120px; }
+
+.img-trabajos {
+  border-radius: 5px; }

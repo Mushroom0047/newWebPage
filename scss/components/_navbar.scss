@@ -1,0 +1,12 @@
+.nav-link{
+    color: $white-color !important;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    padding-left: 10px !important;
+
+    &:hover{
+        background-color: $white-color;
+        color: $dark-color !important;
+        border-radius: 5px;
+    }
+}

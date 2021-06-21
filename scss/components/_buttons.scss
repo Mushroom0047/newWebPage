@@ -1,0 +1,17 @@
+.btn-portafolio{
+    border-radius: 10px;
+    border: 2px solid $yellow-color !important;
+    margin-right: 10px;
+    &:hover {
+        background-color: $yellow-color;
+    }
+}
+.btn {
+    color: $white-color;
+    padding: 5px 20px;
+    font-weight: bold;
+
+    &:hover {
+        color: $dark-color;        
+    }
+}
