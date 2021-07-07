@@ -1,0 +1,39 @@
+.hero-name {
+    margin-top: 120px;
+}
+#sec-00 {
+    margin-top: 100px;
+    height: 600px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+// Celulares
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero-name {
+        margin-top: 0;
+        text-align: center;
+    }
+    #sec-00 {
+        margin-top: 100px;
+        height: 400px;
+        position: absolute;
+        left: 10%;
+        top: 5%;
+    }
+}
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-name {
+        margin-top: 0;
+        text-align: center;
+    }
+    #sec-00 {
+        margin-top: 100px;
+        height: 400px;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+    }
+}

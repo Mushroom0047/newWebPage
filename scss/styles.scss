@@ -5,6 +5,8 @@
 @import "components/tittles";
 @import "components/buttons";
 @import "components/form";
+@import "components/images";
+@import "components/hero";
 
 html, body {
     max-width: 100% !important;
@@ -14,20 +16,10 @@ html, body {
 strong {
     color: $yellow-color;
 }
-#sec-00 {
-    margin-top: 100px;
-    height: 600px;
-}
-
 hr {
     color: $yellow-color;
     margin: 100px 0;
 }
-
-.hero-name {
-    margin-top: 120px;
-}
-
-.img-trabajos {
-    border-radius: 5px;
+.caja-sobre-mi{
+    margin-top:  100px;
 }

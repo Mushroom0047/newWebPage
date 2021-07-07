@@ -1,0 +1,17 @@
+.image-profile {
+    max-width: 400px !important;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+@media only screen and (max-width: 600px) {
+    .image-profile {
+        display: none;
+    }
+}
+.img-trabajos {
+    border-radius: 10px;
+}
+.image-me{
+    max-width: 200px;
+    border-radius: 10px;
+}

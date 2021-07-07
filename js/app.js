@@ -1,6 +1,6 @@
 //Animation of typewriter
 const tittleName = document.querySelector('.typewriter');
-let nombre = 'Mí nombre es Héctor ';
+let nombre = 'Mi nombre es Héctor ';
 let indice = 0;
 
 var intervalStart = window.setInterval(()=>{
