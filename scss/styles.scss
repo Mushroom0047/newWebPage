@@ -12,6 +12,7 @@ html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
     background-color: $dark-color;
+    scroll-behavior: smooth;
 }
 strong {
     color: $yellow-color;

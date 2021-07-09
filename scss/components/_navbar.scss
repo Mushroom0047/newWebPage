@@ -1,12 +1,68 @@
+nav{
+    width: 100%;
+    background-color: $yellow-color;
+    border-radius: 5px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    padding: 15px 0px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.nav-menu{
+    margin: 0;
+    padding: 0;    
+}
+.nav-item{
+    list-style-type: none;
+    margin: 0 3vw;
+    font-size: 2vh;
+    display: inline;
+    text-shadow: 0.1em 0.1em 0.2em $dark-color;
+}
 .nav-link{
-    color: $white-color !important;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 2px;
-    padding-left: 10px !important;
+    text-decoration: none;
+    color: $white-color;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+.nav-link:hover{
+    background-color: $white-color;
+    color: $dark-color;
+    border-radius: 10px;
+    text-shadow: none;
+    box-shadow: 5px 5px 5px $dark-color;
+}
+.nav-item-hamburger{
+    color: $white-color;
+    display: none;
+}
+.nav-hamburger:hover{
+    cursor: pointer;
+}
+.nav-hamburger i{
+    font-size: 1.3em;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        text-align: right;
+        padding: 10px 0;
+    }
+    .nav-item-hamburger{
+        display: inline;
+        margin-right: 30px;
+    }
+    .nav-menu{
+        display: none;
+    }
 
-    &:hover{
-        background-color: $white-color;
-        color: $dark-color !important;
-        border-radius: 5px;
+    // Mostrar menu
+    .responsive{
+        display: block;
+        text-align: left;   
+    }
+    .nav-item{
+        display: block;
+        padding: 5px 0;
     }
 }

@@ -15,3 +15,15 @@ function write(){
         clearInterval(intervalStart);     
     }
 }
+// Navbar
+const btnHam = document.querySelector('.nav-hamburger');
+btnHam.addEventListener('click', openMenu);
+
+function openMenu(){
+    let menuHam = document.querySelector('#nav-menu');
+    if (menuHam.className === "nav-menu") {
+        menuHam.className += " responsive";
+    } else {
+        menuHam.className = "nav-menu";
+    }
+}

@@ -1,15 +1,81 @@
-.nav-link {
-  color: #efefef !important;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
-  padding-left: 10px !important;
-}
-.nav-link:hover {
-  background-color: #efefef;
-  color: #212529 !important;
+nav {
+  width: 100%;
+  background-color: #dfac13;
   border-radius: 5px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  padding: 15px 0px;
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
+.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 0 3vw;
+  font-size: 2vh;
+  display: inline;
+  text-shadow: 0.1em 0.1em 0.2em #212529;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #efefef;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  background-color: #efefef;
+  color: #212529;
+  border-radius: 10px;
+  text-shadow: none;
+  box-shadow: 5px 5px 5px #212529;
+}
+
+.nav-item-hamburger {
+  color: #efefef;
+  display: none;
+}
+
+.nav-hamburger:hover {
+  cursor: pointer;
+}
+
+.nav-hamburger i {
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  .nav-item-hamburger {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .responsive {
+    display: block;
+    text-align: left;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 5px 0;
+  }
+}
 /*FOOTER*/
 .footer-basic {
   padding: 40px 0;
@@ -134,50 +200,11 @@ p {
   border-radius: 10px;
 }
 
-.hero-name {
-  margin-top: 120px;
-}
-
-#sec-00 {
-  margin-top: 100px;
-  height: 600px;
-  position: absolute;
-  left: 30%;
-  top: 10%;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .hero-name {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  #sec-00 {
-    margin-top: 100px;
-    height: 400px;
-    position: absolute;
-    left: 10%;
-    top: 5%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-name {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  #sec-00 {
-    margin-top: 100px;
-    height: 400px;
-    position: absolute;
-    left: 10%;
-    top: 15%;
-  }
-}
 html, body {
   max-width: 100% !important;
   overflow-x: hidden !important;
   background-color: #212529;
+  scroll-behavior: smooth;
 }
 
 strong {
