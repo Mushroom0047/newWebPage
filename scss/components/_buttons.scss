@@ -1,17 +1,33 @@
 .btn-portafolio{
     border-radius: 10px;
-    border: 2px solid $yellow-color !important;
-    margin-right: 10px;
+    border: 2px solid $yellow-color;
+    background-color: $dark-color;
+    padding: 10px 25px;
+    color: $white-color;
+    font-weight: 700;
+    font-family: 'Arial';
+    letter-spacing: 1.5px;
+
     &:hover {
         background-color: $yellow-color;
+        color: $dark-color;
+        cursor: pointer;
+        font-weight: 700;
     }
 }
 .btn {
     color: $white-color;
-    padding: 5px 20px;
-    font-weight: bold;
+    padding: 10px 25px;
+    font-weight: 700;
+    font-family: 'Arial';
+    background-color: $yellow-color;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 2px;
 
     &:hover {
-        color: $dark-color;        
+        color: $dark-color;
+        cursor: pointer;    
+        font-weight: 700;    
     }
 }

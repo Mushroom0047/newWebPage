@@ -1,18 +1,17 @@
 h1 {
     font-family: 'Anton', sans-serif;
     color: $white-color;
-    margin-bottom:  10px !important;
+    letter-spacing: 2px;
+    margin-bottom:  10px;
 }
 h3 {
     color: $white-color;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
 }
 p {
     color: $white-color;
 }
 .titulo {
     margin-bottom: 20px;
-}
-.navbar-brand {
-    color: $white-color !important;
 }

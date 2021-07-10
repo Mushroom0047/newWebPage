@@ -11,7 +11,7 @@
   margin: 0 8px;
   color: $white-color;
 }
-.social {
+.social-hero {
   text-align: left;
   padding-bottom: 25px;
 }
@@ -19,7 +19,7 @@
   text-align: center;
   padding-bottom: 25px;
 }
-.social-footer  a, .social a {
+.social-footer  a, .social-hero a {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -30,15 +30,11 @@
   border: 1px solid $white-color;
   margin: 0 8px;
   color: $white-color;
+  transition: all 1s;
 }
 
-.social > a:hover, .social-footer  > a:hover {
+.social-hero > a:hover, .social-footer  > a:hover {
   background-color: $yellow-color;
   border-color: $yellow-color;
-}
-
-@media only screen and (max-width: 600px) {
-  .social {
-    text-align: center;
-  }
+  transform: rotate(360deg);
 }
