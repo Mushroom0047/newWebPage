@@ -128,7 +128,7 @@ h1 {
   font-size: xx-large;
   color: #efefef;
   letter-spacing: 2px;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -138,9 +138,15 @@ h1 {
 }
 
 h3 {
+  font-size: 0.9rem;
   color: #efefef;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
+}
+
+h2 {
+  color: #efefef;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -190,44 +196,45 @@ p {
   margin-bottom: 10%;
 }
 
-.container-formulario p {
-  text-align: center;
-}
-
-.form-control {
-  width: 50%;
-  margin: auto;
-}
-
 .form-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  width: 95%;
+  height: 30px;
+  background-color: #212529;
+  border: 0;
+  border-bottom: 1px solid #dfac13;
+  color: #efefef;
+  margin: 20px 0;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input:valid {
+  color: #dfac13;
+}
+.form-input:invalid {
+  color: red;
 }
 
-.button-form {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 120px;
-  text-align: right;
+.container-formulario {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: repeat(2, 0.2fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-@media only screen and (max-width: 600px) {
-  .button-form, .form-control {
-    width: 95%;
-    margin: auto;
-  }
-
-  .button-form {
-    margin-bottom: 140px;
-  }
+.div1 {
+  grid-area: 1/1/2/2;
 }
+
+.div2 {
+  grid-area: 1/2/2/3;
+}
+
+.div3 {
+  grid-area: 2/1/3/3;
+}
+
 .image-profile {
   width: 100%;
   height: auto;
@@ -318,10 +325,6 @@ p {
   margin: 0 25%;
 }
 
-#sec-01 {
-  background-color: #dfac13;
-}
-
 @media only screen and (max-width: 600px) {
   .container-sobremi {
     border-bottom-right-radius: 30%;
@@ -330,23 +333,16 @@ p {
     margin: 0;
   }
 }
-#sec-02 {
-  background-color: #212529;
-}
-#sec-02 .container-knowledge {
-  width: 100%;
-  display: inline-block;
-  background-color: #dfac13;
-  border-top-left-radius: 50%;
-}
-#sec-02 .knowledge-item {
+.knowledge-item {
   padding: 5px 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   text-align: left;
-  margin-left: 30px;
+  color: #efefef;
+  margin: 0;
 }
-#sec-02 .knowledge-item i {
+
+.knowledge-item i {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -356,138 +352,133 @@ p {
   border-radius: 50%;
   color: #dfac13;
   margin-right: 10px;
-  box-shadow: 5px 5px 5px #212529;
 }
-#sec-02 #progress-bar {
-  background-color: #efefef;
-  height: 10px;
-  box-shadow: 2px 2px 2px #212529;
-  border-radius: 2px;
-  margin-left: 20px;
+
+.container-knowledge {
+  background-color: #161a1d;
+  border-radius: 20rem 0;
+  height: auto;
+}
+.container-knowledge .description-knowledge {
+  margin: 0 20%;
+}
+.container-knowledge p {
+  margin: 0 20px;
+}
+.container-knowledge .knowledge h2 {
+  text-align: center;
+}
+.container-knowledge .knowledge div {
+  border: 1px solid #efefef;
 }
 
 .knowledge {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 0.2fr 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  align-items: center;
-  margin: 0 20%;
+  grid-row-gap: 0px;
+  margin: 60px 6% 0 6%;
 }
 
-.item-0 {
+.tittle-programming {
   grid-area: 1/1/2/2;
+  border-top-left-radius: 30px;
 }
 
-.item-2 {
+.programming-languages {
   grid-area: 2/1/3/2;
+  border-bottom-left-radius: 30px;
 }
 
-.item-3 {
-  grid-area: 3/1/4/2;
-}
-
-.item-4 {
-  grid-area: 4/1/5/2;
-}
-
-.item-5 {
-  grid-area: 5/1/6/2;
-}
-
-.item-6 {
-  grid-area: 6/1/7/2;
-}
-
-.item-7 {
-  grid-area: 7/1/8/2;
-}
-
-.item-8 {
-  grid-area: 8/1/9/2;
-}
-
-.item-9 {
-  grid-area: 9/1/10/2;
-}
-
-.item-10 {
-  grid-area: 10/1/11/2;
-}
-
-.item-11 {
-  grid-area: 11/1/12/2;
-}
-
-.progress-bar-12 {
+.tittle-web {
   grid-area: 1/2/2/3;
 }
 
-.progress-bar-13 {
+.web-design {
   grid-area: 2/2/3/3;
 }
 
-.progress-bar-14 {
-  grid-area: 3/2/4/3;
+.tittle-videogames {
+  grid-area: 1/3/2/4;
 }
 
-.progress-bar-15 {
-  grid-area: 4/2/5/3;
+.videogames-dev {
+  grid-area: 2/3/3/4;
 }
 
-.progress-bar-16 {
-  grid-area: 5/2/6/3;
+.tittle-other {
+  grid-area: 1/4/2/5;
+  border-top-right-radius: 30px;
 }
 
-.progress-bar-17 {
-  grid-area: 6/2/7/3;
-}
-
-.progress-bar-18 {
-  grid-area: 7/2/8/3;
-}
-
-.progress-bar-19 {
-  grid-area: 8/2/9/3;
-}
-
-.progress-bar-20 {
-  grid-area: 9/2/10/3;
-}
-
-.progress-bar-21 {
-  grid-area: 10/2/11/3;
-}
-
-.progress-bar-22 {
-  grid-area: 11/2/12/3;
+.other {
+  grid-area: 2/4/3/5;
+  border-bottom-right-radius: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-  #sec-02 .container-knowledge {
-    border-top-left-radius: 120px;
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  .container-knowledge .description-knowledge {
+    margin: 30px 5px;
+  }
+
+  .container-knowledge {
+    height: auto;
   }
 
   .knowledge {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     margin: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(11, 1fr);
   }
 
-  .knowledge-item {
-    text-align: left;
+  .tittle-programming {
+    grid-area: 1/1/2/2;
+    border-top-left-radius: 30px;
   }
 
-  #progress-bar {
-    margin: 0;
-    padding: 0;
+  .programming-languages {
+    grid-area: 2/1/3/2;
+    border-bottom-left-radius: 30px;
+  }
+
+  .tittle-web {
+    grid-area: 1/2/2/3;
+    border-top-right-radius: 30px;
+  }
+
+  .web-design {
+    grid-area: 2/2/3/3;
+    border-bottom-right-radius: 30px;
+  }
+
+  .tittle-videogames {
+    grid-area: 3/1/4/2;
+    border-top-left-radius: 30px;
+  }
+
+  .videogames-dev {
+    grid-area: 4/1/5/2;
+    border-bottom-left-radius: 30px;
+  }
+
+  .tittle-other {
+    grid-area: 3/2/4/3;
+    border-top-right-radius: 30px;
+  }
+
+  .other {
+    grid-area: 4/2/5/3;
+    border-bottom-right-radius: 30px;
   }
 }
-#sec-03 {
-  background-color: #dfac13;
-}
-
 .container-trabajos {
   display: inline-block;
   width: 100%;
