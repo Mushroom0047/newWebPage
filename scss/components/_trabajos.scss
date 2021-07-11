@@ -1,0 +1,24 @@
+#sec-03{
+    background-color: $yellow-color;
+}
+.container-trabajos{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 50%;
+    background-color: $dark-color;
+
+    p{
+        margin: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-trabajos{
+        border-top-left-radius: 30%;
+
+        p{
+            margin: 0 5px 10px 5px;
+        }
+    }
+}

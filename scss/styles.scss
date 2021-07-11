@@ -1,5 +1,5 @@
-@import "components/global-var.scss";
-@import "components/navbar.scss";
+@import "components/global-var";
+@import "components/navbar";
 @import "components/footer"; 
 @import "components/icons";
 @import "components/tittles";
@@ -7,20 +7,16 @@
 @import "components/form";
 @import "components/images";
 @import "components/hero";
+@import "components/sobremi";
+@import "components/conocimientos";
+@import "components/trabajos";
 
 html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: $dark-color;
     scroll-behavior: smooth;
 }
 strong {
     color: $yellow-color;
-}
-hr {
-    color: $yellow-color;
-    margin: 100px 0;
-}
-.caja-sobre-mi{
-    margin-top:  100px;
 }

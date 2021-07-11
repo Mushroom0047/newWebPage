@@ -1,11 +1,11 @@
-.btn-portafolio{
+.btn-portafolio, .btn-limpiar{
     border-radius: 10px;
     border: 2px solid $yellow-color;
     background-color: $dark-color;
     padding: 10px 25px;
     color: $white-color;
     font-weight: 700;
-    font-family: 'Arial';
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
 
     &:hover {
@@ -19,7 +19,7 @@
     color: $white-color;
     padding: 10px 25px;
     font-weight: 700;
-    font-family: 'Arial';
+    font-family: 'Roboto', sans-serif;
     background-color: $yellow-color;
     border-radius: 5px;
     border: none;
@@ -28,6 +28,9 @@
     &:hover {
         color: $dark-color;
         cursor: pointer;    
-        font-weight: 700;    
+        font-weight: 900;    
     }
+}
+.btn-download{
+    margin-bottom: 10%;
 }

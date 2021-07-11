@@ -11,10 +11,7 @@
     <meta http-equiv="content-type" content="text/html;UTF-8">
     <meta http-equiv="content-language" content="es">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+
     <!-- AOS cs -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -26,10 +23,10 @@
     <canvas id=canvas></canvas>
     <!-- Nav bar -->
     <header class="header">
-        <nav class="navbar">    
+        <nav class="navbar">
             <li class="nav-item-hamburger">
                 <a class="nav-hamburger"><i class="fas fa-bars"></i></a>
-            </li>        
+            </li>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a class="nav-link" href="#sec-01">Sobre mí</a>
@@ -42,146 +39,155 @@
                 </li>
                 <li class="nav-item">
                     <a href="#sec-04" class="nav-link">Contacto</a>
-                </li>        
-            </ul>            
+                </li>
+            </ul>
         </nav>
-</header>
+    </header>
     <!-- HERO -->
     <section id="sec-00">
         <div class="container-hero">
             <div class="social-hero">
                 <a href="https://www.instagram.com/hectorvaldesm/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.twitter.com/Mushroom0047"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.github.com/Mushroom0047"><i class="fab fa-github"></i></a>
             </div>
             <div class="titulo-hero">
-               <h1 class="typewriter"></h1>
-                <h3>Analista Programador </h3> 
+                <h1 class="typewriter"></h1>
+                <h3>Analista Programador </h3>
             </div>
-            
+
             <div class="button-hero">
                 <a href="#sec-03"><input class="btn-portafolio" type="button" value="Portafolio"></a>
                 <a href="#sec-01"><input class="btn" type="button" value="Sobre mí"></a>
             </div>
             <div class="image-hero">
                 <img class="image-profile" src="img/avatar.jpg" alt="profile foto">
-            </div>           
+            </div>
         </div>
     </section>
-    <hr id="sec-01">
+
     <!-- About me -->
-    <section class="caja-sobre-mi">
-        <div class="container text-center" data-aos="fade-right">
-            <h1>Sobre mí</h1>
-            <div class="row">
-                <div class="col-12">
-                    <p class="descrip-me">
-                        Hola! Me llamo <strong>Héctor</strong> y Actualmente me encuentro en el último
-                        semestre de la carrera analista programador en Inacap.
-                        Soy una persona estudiosa, dedicada y responsable,
-                        con muchas metas cumplidas y muchas más por cumplir. <br>
-                        Me considero una buena persona, amigable, comprensiva,
-                        educada, y creo que para todo hay tiempo.
-                        Mi <strong>Hobbie</strong> son los videojuegos sobre todos los independientes,
-                        también me encanta estudiar y tocar guitarra eléctrica, siempre estoy buscando alguna nueva
-                        tecnología o reforzando lo aprendido.</p>
-                    <img class="img-fluid image-me" src="img/Imagen1.png" alt="">
-                    <br><br><br>
-                    <p>Puedes descargar mí curriculum acá</p>
-                    <div data-aos="fade-up">
-                        <a href="cv/HectorValdes-AnalistaProgramador.pdf" target="_blank"
-                            rel="noopener noreferrer"><input type="button" class="btn btn-warning"
-                                value="Descargar" /></a>
-                    </div>
-
-                </div>
+    <div class="caja-sobre-mi" id="sec-01">
+        <div class="container-sobremi">
+            <h1 class="h1-sobremi">Sobre mí</h1>
+            <p class="descrip-me">
+                Hola! Me llamo <strong>Héctor</strong> y Actualmente me encuentro en el último
+                semestre de la carrera analista programador en Inacap.
+                Soy una persona estudiosa, dedicada y responsable,
+                con muchas metas cumplidas y muchas más por cumplir. <br>
+                Me considero una buena persona, amigable, comprensiva,
+                educada, y creo que para todo hay tiempo.
+                Mi Hobbie son los videojuegos sobre todos los independientes,
+                también me encanta estudiar y tocar guitarra eléctrica, siempre estoy buscando alguna nueva
+                tecnología o reforzando lo aprendido.</p>
+            <img class="image-me" src="img/Imagen1.png" alt="foto de mi mismisimo">
+            <p>Puedes descargar mí curriculum acá</p>
+            <div class="btn-download" data-aos="fade-up">
+                <a href="cv/HectorValdes-AnalistaProgramador.pdf" target="_blank" rel="noopener noreferrer"><input
+                        type="button" class="btn btn-warning" value="Descargar" /></a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <hr id="sec-02">
     <!-- Conocimientos -->
-    <section>
-        <div class="container" data-aos="fade-left">
-            <h1>Conocimientos</h1>
-            <div class="row knowledge">
-                <div class="col-12">
-                    <p>Constantemente estoy aprendiendo de manera autodidacta, pero hasta ahora estas son las
-                        tecnologías
-                        que conozco.</p>
+    <div id="sec-02">
+        <div class="container-knowledge">
+            <h1 class="h1-conocimientos">Conocimientos</h1>
+            <!-- <p>Constantemente estoy aprendiendo de manera autodidacta, pero hasta ahora estas son las
+                tecnologías
+                que conozco.</p> -->
+            <div class="knowledge">
+                <div class="item-1">
+                    <p class="knowledge-item"><i class="fab fa-java"></i>Java</p>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <p><i class="fab fa-java"></i> Java</p>
-                    <p><i class="fab fa-html5"></i>HTML</p>
-                    <p><i class="fab fa-css3-alt"></i>CSS</p>
-                    <p><i class="fab fa-android"></i>Android Studio</p>
-                    <p><i class="fas fa-gamepad"></i>Game Maker Studio 2</p>
+                <div class="progress-bar-12" id="progress-bar"></div>
+                <div class=item-2>
+                    <p class="knowledge-item"><i class="fab fa-html5"></i>HTML</p>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <p><i class="fas fa-database"></i>Base de Datos SQL</p>
-                    <p><i class="fab fa-js"></i>JavaScript</p>
-                    <p><i class="fas fa-code"></i>C#</p>
-                    <p><i class="fab fa-git"></i>Control de versiones git</p>
-                    <p><i class="fab fa-unity"></i>Unity2d</p>
+                <div class="progress-bar-13" id="progress-bar"></div>
+                <div class=item-3>
+                    <p class="knowledge-item"><i class="fab fa-css3-alt"></i>CSS/SASS</p>
                 </div>
+                <div class="progress-bar-14" id="progress-bar"></div>
+                <div class=item-4>
+                    <p class="knowledge-item"><i class="fab fa-android"></i>Android Studio</p>
+                </div>
+                <div class="progress-bar-15" id="progress-bar"></div>
+                <div class=item-5>
+                    <p class="knowledge-item"><i class="fas fa-gamepad"></i>Game Maker Studio 2</p>
+                </div>
+                <div class="progress-bar-16" id="progress-bar"></div>
+                <div class=item-6>
+                    <p class="knowledge-item"><i class="fas fa-database"></i>Base de Datos SQL</p>
+                </div>
+                <div class="progress-bar-17" id="progress-bar"></div>
+                <div class=item-7>
+                    <p class="knowledge-item"><i class="fab fa-js"></i>JavaScript</p>
+                </div>
+                <div class="progress-bar-18" id="progress-bar"></div>
+                <div class=item-8>
+                    <p class="knowledge-item"><i class="fas fa-code"></i>C#</p>
+                </div>
+                <div class="progress-bar-19" id="progress-bar"></div>
+                <div class=item-9>
+                    <p class="knowledge-item"><i class="fab fa-git"></i>Control de versiones git</p>
+                </div>
+                <div class="progress-bar-20" id="progress-bar"></div>
+                <div class=item-10>
+                    <p class="knowledge-item"><i class="fab fa-unity"></i>Unity2d</p>
+                </div>
+                <div class="progress-bar-21" id="progress-bar"></div>
+                <div class=item-11>
+                    <p class="knowledge-item"><i class="fab fa-wordpress-simple"></i>Wordpress</p>
+                </div>
+                <div class="progress-bar-22" id="progress-bar"></div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <hr id="sec-03">
     <!-- Trabajos -->
-    <section>
-        <div class="container text-center" data-aos="fade-right">
-            <h1>Trabajos</h1>
-            <div class="row">
-                <div class="col-12">
-                    <p class="mt-3">Tengo pocos proyectos creados, hasta ahora algunas cosas para practicar con
-                        <strong>JavaScript</strong>
-                        pero pronto ire subiendo más cosas. <br> Revisa mi Portafolio en el Siguiente <a
-                            href="http://portafolio.hectorvaldesm.com/"><input type="button" class="btn btn-warning"
-                                value="Link" /></a>
-                    </p>
-                </div>
-                <div class="col-12">
-                    <img class="img-fluid img-trabajos" src="img/trabajos.png" alt="imagen de trabajo">
-                </div>
-            </div>
+    <div id="sec-03">
+        <div class="container-trabajos">
+            <h1 class="h1-trabajos">Trabajos</h1>
+            <p>Tengo pocos proyectos creados, hasta ahora algunas pruebas para practicar con
+                <strong>JavaScript</strong>, APP para <strong>Android</strong> y algunas modificaciones en páginas de <strong>Wordpress</strong>
+                pero pronto ire subiendo más cosas. <br> Revisa mi Portafolio en el Siguiente <br><a
+                    href="http://portafolio.hectorvaldesm.com/"><input type="button" class="btn"
+                        value="Link" /></a>
+            </p>
+            <img class="img-trabajos" src="img/trabajos.png" alt="imagen de trabajo">
         </div>
-    </section>
+    </div>
 
-    <hr id="sec-04">
     <!-- contacto -->
-    <section>
-        <div class="container" data-aos="flip-left">
-            <h1>Contactame</h1>
+    <div id="sec-04">
+        <div class="container-formulario">
+            <h1 class="h1-contactame">Contactame</h1>
             <p>Si quieres saber más sobre mí o sobre mi trabajo enviame un mensaje.</p>
 
-            <form method="post" action="/contacto.php">
-                <div class="row form-contact">
-                    <div class="col-xs-12 col-sm-6">
-                        <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required />
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Email" required />
-                    </div>
-                    <div class="col-12">
-                        <input class="form-control" type="text" name="subject" id="subject" placeholder="Asunto"
-                            required />
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" name="message" id="message" placeholder="Mensaje" rows="6"
-                            required></textarea>
-                    </div>
-                    <div class="col-12 button-form">
-                        <input type="submit" class="btn btn-warning" value="Enviar" name="enviar" />
-                        <input type="reset" value="Limpiar" class="btn btn-secondary" />
-                    </div>
+            <form method="post" action="/contacto.php">               
+                <div class="form-control">
+                    <input class="form-input form-name" type="text" name="name" id="name" placeholder="Nombre..." required />
                 </div>
+                <div class="form-control">
+                    <input class="form-input form-email" type="email" name="email" id="email" placeholder="Email..." required />
+                </div>
+                <div class="form-control">
+                    <input class="form-input" type="text" name="subject" id="subject" placeholder="Asunto..."
+                        required />
+                </div>
+                <div class="form-control">
+                    <textarea class="form-input" name="message" id="message" placeholder="Mensaje..." rows="6"
+                        required></textarea>
+                </div>
+                <div class="button-form">
+                    <input type="submit" class="btn" value="Enviar" name="enviar" />
+                    <input type="reset" value="Limpiar" class="btn-limpiar" />
+                </div>                
             </form>
         </div>
-    </section>
+    </div>
 
 
 
@@ -194,7 +200,7 @@
                 <a href="https://www.twitter.com/Mushroom0047"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.github.com/Mushroom0047"><i class="fab fa-github"></i></a>
             </div>
-            <p class="copyright">HectorValdesM. All rights reserved.</p>
+            <p class="copyright">&#169;Copyright 2021 HectorValdesM. All rights reserved.</p>
         </footer>
     </div>
 
