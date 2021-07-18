@@ -26,3 +26,22 @@
   border-color: $yellow-color;
   transform: rotate(360deg);
 }
+
+.fa-cog{
+  font-size: 10rem;
+  color: $yellow-color;
+}
+#spin1, #spin2{
+  margin-top: 30px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#spin2{
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  100%{transform: rotate(360deg);}
+}

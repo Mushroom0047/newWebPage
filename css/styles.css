@@ -123,6 +123,28 @@ nav {
   transform: rotate(360deg);
 }
 
+.fa-cog {
+  font-size: 10rem;
+  color: #dfac13;
+}
+
+#spin1, #spin2 {
+  margin-top: 30px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#spin2 {
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 h1 {
   font-family: "Anton", sans-serif;
   font-size: xx-large;
@@ -325,7 +347,7 @@ p {
   margin: 0 25%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .container-sobremi {
     border-bottom-right-radius: 30%;
   }
@@ -417,7 +439,7 @@ p {
   border-bottom-right-radius: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   h2 {
     font-size: 0.8rem;
   }
