@@ -5,7 +5,7 @@
     font-weight: 600;
     text-align: left;
     color: $white-color;
-    margin: 0;
+    margin: 0 0 15px 20px;
   }
   .knowledge-item i {
     font-size: 24px;
@@ -19,72 +19,53 @@
     margin-right: 10px;
   }
 
-  .container-knowledge{
-    background-color: $dark-bg;
-    border-radius: 20rem 0;
-    height: auto;
-
-    .description-knowledge{
-      margin: 0 20%;
-    }
-    
-    p{
-       margin: 0 20px;
-    }
-    .knowledge h2{
-      text-align: center;
-    }
-    .knowledge div{
-      border: 1px solid $white-color;
-    }
-  }
+ .description-knowledge{
+   margin: 20px 10%;
+   text-align: center;
+ }
   // Clase padre grid
-  .knowledge{
+  .knowledge {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: .2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin: 0 10%;
+    
+    div:hover{
+      background-color: $yellow-color;
+      transition: all 1s;
+      border-radius: 5%;
 
-    margin: 60px 6% 0 6%;
-}
- 
-.tittle-programming { grid-area: 1 / 1 / 2 / 2; border-top-left-radius: 30px;}
-.programming-languages { grid-area: 2 / 1 / 3 / 2; border-bottom-left-radius: 30px;}
-.tittle-web { grid-area: 1 / 2 / 2 / 3; }
-.web-design { grid-area: 2 / 2 / 3 / 3; }
-.tittle-videogames { grid-area: 1 / 3 / 2 / 4; }
-.videogames-dev { grid-area: 2 / 3 / 3 / 4; }
-.tittle-other { grid-area: 1 / 4 / 2 / 5; border-top-right-radius: 30px;}
-.other { grid-area: 2 / 4 / 3 / 5; border-bottom-right-radius: 30px;}
+      .knowledge-item i{
+          background-color: $dark-color;
+          transition: all .8s;
+        }
+      
+    }
 
-@media only screen and (max-width: 1000px) {
-  h2{
-    font-size: .8rem;
-  }
-  .container-knowledge .description-knowledge{
-    margin: 30px 5px;
-  }
-  .container-knowledge{
-    height: auto;
-  }
 
-  .knowledge{
+    .web { grid-area: 1 / 1 / 2 / 2; background-color: $dark-bg;}
+    .progra { grid-area: 1 / 2 / 2 / 3; background-color: $dark-bg;}
+    .tec { grid-area: 2 / 1 / 3 / 2; background-color: $dark-bg; }
+    .games { grid-area: 2 / 2 / 3 / 3; background-color: $dark-bg;}
+  }
+    
+    
+
+@media only screen and (max-width: 700px) {
+  .knowledge {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: .2fr 1fr .2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 25px;
 
-    margin: 0;
+    .web { grid-area: 1 / 1 / 2 / 2; }
+    .progra { grid-area: 2 / 1 / 3 / 2; }
+    .tec { grid-area: 3 / 1 / 4 / 2; }
+    .games { grid-area: 4 / 1 / 5 / 2; }
   }
-  .tittle-programming { grid-area: 1 / 1 / 2 / 2; border-top-left-radius: 30px;}
-  .programming-languages { grid-area: 2 / 1 / 3 / 2; border-bottom-left-radius: 30px;}
-  .tittle-web { grid-area: 1 / 2 / 2 / 3; border-top-right-radius: 30px;}
-  .web-design { grid-area: 2 / 2 / 3 / 3; border-bottom-right-radius: 30px;}
-  .tittle-videogames { grid-area: 3 / 1 / 4 / 2; border-top-left-radius: 30px;}
-  .videogames-dev { grid-area: 4 / 1 / 5 / 2; border-bottom-left-radius: 30px;}
-  .tittle-other { grid-area: 3 / 2 / 4 / 3; border-top-right-radius: 30px;}
-  .other { grid-area: 4 / 2 / 5 / 3; border-bottom-right-radius: 30px;}
-
+    
+    
 }

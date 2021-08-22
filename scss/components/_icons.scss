@@ -32,16 +32,31 @@
   color: $yellow-color;
 }
 #spin1, #spin2{
-  margin-top: 30px;
+  margin: 30px 0;
   animation-name: spin;
+}
+#spin1{
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-delay: .5s;
 }
+
 #spin2{
+  position: relative;
+  right: 20px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-direction: reverse;
 }
 
 @keyframes spin {
   100%{transform: rotate(360deg);}
+}
+
+@media only screen and (max-width: 600px) {
+  .fa-cog{
+    font-size: 8rem;
+  }
 }

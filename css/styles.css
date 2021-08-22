@@ -129,20 +129,34 @@ nav {
 }
 
 #spin1, #spin2 {
-  margin-top: 30px;
+  margin: 30px 0;
   animation-name: spin;
+}
+
+#spin1 {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-delay: 0.5s;
 }
 
 #spin2 {
+  position: relative;
+  right: 20px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-direction: reverse;
 }
 
 @keyframes spin {
   100% {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fa-cog {
+    font-size: 8rem;
   }
 }
 h1 {
@@ -179,6 +193,10 @@ p {
 
 .titulo {
   margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .btn-portafolio, .btn-limpiar {
@@ -237,24 +255,16 @@ p {
   color: red;
 }
 
-.container-formulario {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: repeat(2, 0.2fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+.tittle-contact {
+  margin-top: 200px;
 }
 
-.div1 {
-  grid-area: 1/1/2/2;
-}
-
-.div2 {
-  grid-area: 1/2/2/3;
-}
-
-.div3 {
-  grid-area: 2/1/3/3;
+#sec-04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15%;
+  margin-bottom: 100px;
 }
 
 .image-profile {
@@ -361,7 +371,7 @@ p {
   font-weight: 600;
   text-align: left;
   color: #efefef;
-  margin: 0;
+  margin: 0 0 15px 20px;
 }
 
 .knowledge-item i {
@@ -376,129 +386,64 @@ p {
   margin-right: 10px;
 }
 
-.container-knowledge {
-  background-color: #161a1d;
-  border-radius: 20rem 0;
-  height: auto;
-}
-.container-knowledge .description-knowledge {
-  margin: 0 20%;
-}
-.container-knowledge p {
-  margin: 0 20px;
-}
-.container-knowledge .knowledge h2 {
+.description-knowledge {
+  margin: 20px 10%;
   text-align: center;
-}
-.container-knowledge .knowledge div {
-  border: 1px solid #efefef;
 }
 
 .knowledge {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: 0.2fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin: 60px 6% 0 6%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  margin: 0 10%;
 }
-
-.tittle-programming {
+.knowledge div:hover {
+  background-color: #dfac13;
+  transition: all 1s;
+  border-radius: 5%;
+}
+.knowledge div:hover .knowledge-item i {
+  background-color: #212529;
+  transition: all 0.8s;
+}
+.knowledge .web {
   grid-area: 1/1/2/2;
-  border-top-left-radius: 30px;
+  background-color: #161a1d;
 }
-
-.programming-languages {
-  grid-area: 2/1/3/2;
-  border-bottom-left-radius: 30px;
-}
-
-.tittle-web {
+.knowledge .progra {
   grid-area: 1/2/2/3;
+  background-color: #161a1d;
 }
-
-.web-design {
+.knowledge .tec {
+  grid-area: 2/1/3/2;
+  background-color: #161a1d;
+}
+.knowledge .games {
   grid-area: 2/2/3/3;
+  background-color: #161a1d;
 }
 
-.tittle-videogames {
-  grid-area: 1/3/2/4;
-}
-
-.videogames-dev {
-  grid-area: 2/3/3/4;
-}
-
-.tittle-other {
-  grid-area: 1/4/2/5;
-  border-top-right-radius: 30px;
-}
-
-.other {
-  grid-area: 2/4/3/5;
-  border-bottom-right-radius: 30px;
-}
-
-@media only screen and (max-width: 1000px) {
-  h2 {
-    font-size: 0.8rem;
-  }
-
-  .container-knowledge .description-knowledge {
-    margin: 30px 5px;
-  }
-
-  .container-knowledge {
-    height: auto;
-  }
-
+@media only screen and (max-width: 700px) {
   .knowledge {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 0;
+    grid-row-gap: 25px;
   }
-
-  .tittle-programming {
+  .knowledge .web {
     grid-area: 1/1/2/2;
-    border-top-left-radius: 30px;
   }
-
-  .programming-languages {
+  .knowledge .progra {
     grid-area: 2/1/3/2;
-    border-bottom-left-radius: 30px;
   }
-
-  .tittle-web {
-    grid-area: 1/2/2/3;
-    border-top-right-radius: 30px;
-  }
-
-  .web-design {
-    grid-area: 2/2/3/3;
-    border-bottom-right-radius: 30px;
-  }
-
-  .tittle-videogames {
+  .knowledge .tec {
     grid-area: 3/1/4/2;
-    border-top-left-radius: 30px;
   }
-
-  .videogames-dev {
+  .knowledge .games {
     grid-area: 4/1/5/2;
-    border-bottom-left-radius: 30px;
-  }
-
-  .tittle-other {
-    grid-area: 3/2/4/3;
-    border-top-right-radius: 30px;
-  }
-
-  .other {
-    grid-area: 4/2/5/3;
-    border-bottom-right-radius: 30px;
   }
 }
 .container-trabajos {
