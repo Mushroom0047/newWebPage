@@ -12,3 +12,53 @@
     ::-webkit-scrollbar-thumb {
         background: $yellow-color; 
     }
+
+    //Subir
+    .up-div{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        z-index: -1;
+
+        .up-button{
+            width: 0rem;
+            height: 0rem;
+            background-color: $yellow-color;
+            border-radius: 50%;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        i{
+            position: absolute;
+            font-size: 30px;
+            color: $dark-color;
+            text-decoration: none;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            scale: 0;
+            transition: .2s;
+        }
+    }
+
+    .show{
+        z-index: 10;
+
+        .up-button{
+            animation: popup .3s ease-in-out;
+            width: 4.2rem;
+            height: 4.2rem;
+            z-index: 11;
+        }
+
+        i{
+            transform: translate(-50%, -50%);
+            scale: 1;
+        }
+    }
