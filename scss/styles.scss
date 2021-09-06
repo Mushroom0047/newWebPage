@@ -9,6 +9,7 @@
 @import "components/hero";
 @import "components/sobremi";
 @import "components/conocimientos";
+@import "components/scroll";
 @import "components/trabajos";
 
 html, body {
@@ -19,4 +20,23 @@ html, body {
 }
 strong {
     color: $yellow-color;
+}
+.loading{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: url('/img/XOsX.gif') 50% 50% no-repeat $yellow-color;
+    
+   
+
+    .txt-loading{
+        position: fixed;
+        left: 40%;
+        right: 40%;
+        top: -40px;
+        color: $dark-color;
+    }
 }

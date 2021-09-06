@@ -3,9 +3,11 @@ const tittleName = document.querySelector('.typewriter');
 let nombre = 'Mi nombre es Héctor ';
 let indice = 0;
 
-var intervalStart = window.setInterval(()=>{
-    write();
-}, 120); 
+window.setTimeout(()=>{
+    window.setInterval(()=>{
+        write();
+    }, 120);     
+}, 1400);
 
 function write(){    
     if(indice < nombre.length){
@@ -27,3 +29,20 @@ function openMenu(){
         menuHam.className = "nav-menu";
     }
 }
+
+
+//Loader page
+window.setTimeout(loading, 1300);
+
+function loading(){
+    let loading = document.querySelector('.loading');
+    let i = 10;
+    window.setInterval(()=>{
+        loading.style.opacity = i / 10;
+        i--;
+        if(i <= 0){
+            loading.style.display = 'none';
+        }
+    }, 40);
+    
+};

@@ -446,6 +446,21 @@ p {
     grid-area: 4/1/5/2;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dfac13;
+}
+
 .container-trabajos {
   display: inline-block;
   width: 100%;
@@ -474,6 +489,23 @@ html, body {
 
 strong {
   color: #dfac13;
+}
+
+.loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: url("/img/XOsX.gif") 50% 50% no-repeat #dfac13;
+}
+.loading .txt-loading {
+  position: fixed;
+  left: 40%;
+  right: 40%;
+  top: -40px;
+  color: #212529;
 }
 
 /*# sourceMappingURL=styles.css.map */

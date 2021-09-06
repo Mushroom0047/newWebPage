@@ -20,6 +20,10 @@
 </head>
 
 <body>
+    <div class="loading">
+        <h1 class="txt-loading">Cargando...</h1>
+    </div>
+
     <canvas id=canvas></canvas>
     <!-- Nav bar -->
     <header class="header">
@@ -69,11 +73,10 @@
 
     <!-- About me -->
     <div class="caja-sobre-mi" id="sec-01">
-        <div class="container-sobremi">
+        <div class="container-sobremi" data-aos="flip-left" data-aos-duration="1000">
             <h1 class="h1-sobremi">Sobre mí</h1>
             <p class="descrip-me">
-                Hola! Me llamo <strong>Héctor</strong> y Actualmente me encuentro en el último
-                semestre de la carrera analista programador en Inacap.
+                Hola! Me llamo <strong>Héctor</strong> y estudie la carrera de Analista programador en Inacap.
                 Soy una persona estudiosa, dedicada y responsable,
                 con muchas metas cumplidas y muchas más por cumplir. <br>
                 Me considero una buena persona, amigable, comprensiva,
@@ -92,7 +95,7 @@
 
     <!-- Conocimientos -->
     <div id="sec-02">
-        <div class="container-knowledge">
+        <div class="container-knowledge" data-aos="flip-left" data-aos-duration="1000">
             <h1 class="h1-conocimientos">Conocimientos</h1>
             <p class="description-knowledge">Estoy a punto de terminar mi carrera técnica como <strong>Analista
                     Programador</strong> en Inacap, sin embargo, constantemente
@@ -104,7 +107,7 @@
                 <strong>HTML, CSS y JavaScript</strong>.
             </p>
             <!-- Cuadro de conocimientos -->
-            <div class="knowledge">
+            <div class="knowledge" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="web">
                     <p class="text-center">Diseño Web</p>
                     <p class="knowledge-item"><i class="fab fa-html5"></i>HTML</p>
@@ -113,18 +116,18 @@
                     <p class="knowledge-item"><i class="fab fa-js"></i>JavaScript</p>
                     <p class="knowledge-item"><i class="fab fa-wordpress-simple"></i>Wordpress</p>
                 </div>
-                <div class="progra">
+                <div class="progra" data-aos="zoom-in" data-aos-duration="1000">
                     <p class="text-center">Lenguajes de Programación</p>
                     <p class="knowledge-item"><i class="fab fa-java"></i>Java</p>                    
                     <p class="knowledge-item"><i class="fas fa-code"></i>C#</p>
                 </div>
-                <div class="tec">
+                <div class="tec" data-aos="zoom-in" data-aos-duration="1000">
                     <p class="text-center">Otros</p>
                     <p class="knowledge-item"><i class="fas fa-database"></i>Base de Datos SQL</p>
                     <p class="knowledge-item"><i class="fab fa-git"></i>Control de versiones</p>
                     <p class="knowledge-item"><i class="fab fa-android"></i>Android Studio</p>
                 </div>
-                <div class="games">
+                <div class="games" data-aos="zoom-in" data-aos-duration="1000">
                     <p class="text-center">Programación de videojuegos</p>
                     <p class="knowledge-item"><i class="fas fa-gamepad"></i>Game Maker Studio 2</p>
                     <p class="knowledge-item"><i class="fab fa-unity"></i>Unity2d</p>
@@ -135,7 +138,7 @@
 
     <!-- Trabajos -->
     <div id="sec-03">
-        <div class="container-trabajos">
+        <div class="container-trabajos" data-aos="flip-right" data-aos-duration="1000">
             <h1 class="h1-trabajos">Proyectos</h1>
             <p>Tengo pocos proyectos creados, hasta ahora algunas pruebas para practicar con
                 <strong>JavaScript</strong>, APP para <strong>Android</strong> y algunas modificaciones en páginas de
@@ -150,7 +153,7 @@
     </div>
 
     <!-- contacto -->
-    <div id="sec-04">
+    <div id="sec-04" data-aos="flip-left" data-aos-duration="1000">
         <div class="tittle-contact">
             <h1 class="h1-contactame">Contactame</h1>
         </div>
@@ -158,7 +161,7 @@
             <p>Si quieres saber más sobre mí o sobre mi trabajo enviame un mensaje.</p>
         </div>
         <form method="post" action="/contacto.php">
-            <div class="container-formulario">
+            <div class="container-formulario" >
                 <div class="div-2">
                     <input class="form-input form-name" type="text" name="name" id="name" placeholder="Nombre..."
                         required />
