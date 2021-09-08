@@ -1,12 +1,38 @@
 .container-trabajos{
-    display: inline-block;
     width: 100%;
+    margin: auto;
+    padding: 100px 0;
     text-align: center;
-    border-top-left-radius: 50%;
-    background-color: $dark-color;
-
+    background-color: $dark-bg;
     p{
         margin: 0 20%;
+    }
+    .h1-trabajos{
+        margin: 0;
+    }
+}
+
+
+.trabajos-up, .trabajos-down{
+    height: 150px;
+    background-color: $dark-bg;
+}
+.trabajos-up{
+    margin-top: 150px;
+
+    .trabajos-radius-up{
+        height: 140px;
+        background-color: $dark-color;
+        border-radius: 0 0 50% 50%;
+    }
+}
+.trabajos-down{
+    margin-bottom: 150px;
+
+    .trabajos-radius-down{
+        height: 150px;
+        background-color: $dark-color;
+        border-radius: 50% 50% 0 0;
     }
 }
 

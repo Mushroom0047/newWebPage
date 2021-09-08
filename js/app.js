@@ -3,6 +3,7 @@ const tittleName = document.querySelector('.typewriter');
 let nombre = 'Mi nombre es Héctor ';
 let indice = 0;
 var intervalStart;
+var intervalOp;
 
 window.setTimeout(intervalWrite, 1400);
 
@@ -39,11 +40,12 @@ window.setTimeout(loading, 1300);
 function loading(){
     let loading = document.querySelector('.loading');
     let i = 10;
-    window.setInterval(()=>{
+    intervalOp = window.setInterval(()=>{
         loading.style.opacity = i / 10;
         i--;
         if(i <= 0){
             loading.style.display = 'none';
+            clearInterval(intervalOp);
         }
     }, 40);
     

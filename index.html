@@ -73,7 +73,7 @@
 
     <!-- About me -->
     <div class="caja-sobre-mi" id="sec-01">
-        <div class="container-sobremi" data-aos="flip-left" data-aos-duration="1000">
+        <div class="container-sobremi" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="h1-sobremi">Sobre mí</h1>
             <p class="descrip-me">
                 Hola! Me llamo <strong>Héctor</strong> y estudié la carrera de Analista programador en Inacap.
@@ -92,10 +92,10 @@
             </div>
         </div>
     </div>
-
+<hr id="hr_separation">
     <!-- Conocimientos -->
     <div id="sec-02">
-        <div class="container-knowledge" data-aos="flip-left" data-aos-duration="1000">
+        <div class="container-knowledge" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="h1-conocimientos">Conocimientos</h1>
             <p class="description-knowledge">Ya terminé mi carrera técnica como <strong>Analista
                     Programador</strong> en Inacap, sin embargo, constantemente
@@ -118,12 +118,12 @@
                 </div>
                 <div class="progra" data-aos="zoom-in" data-aos-duration="1000">
                     <p class="text-center">Lenguajes de Programación</p>
-                    <p class="knowledge-item"><i class="fab fa-java"></i>Java</p>                    
+                    <p class="knowledge-item"><i class="fab fa-java"></i>Java</p>
                     <p class="knowledge-item"><i class="fas fa-code"></i>C#</p>
                 </div>
                 <div class="tec" data-aos="zoom-in" data-aos-duration="1000">
                     <p class="text-center">Otros</p>
-                    <p class="knowledge-item"><i class="fas fa-database"></i>Base de Datos SQL</p>
+                    <p class="knowledge-item"><i class="fas fa-base"></i>Base de Datos SQL</p>
                     <p class="knowledge-item"><i class="fab fa-git"></i>Control de versiones</p>
                     <p class="knowledge-item"><i class="fab fa-android"></i>Android Studio</p>
                 </div>
@@ -135,49 +135,55 @@
             </div>
         </div>
     </div>
-
-    <!-- Trabajos -->
+    <hr id="hr_separation">
+    <!-- Proyectos -->
     <div id="sec-03">
-        <div class="container-trabajos" data-aos="flip-right" data-aos-duration="1000">
-            <h1 class="h1-trabajos">Proyectos</h1>
-            <p>Tengo pocos proyectos creados, hasta ahora algunas pruebas para practicar con
-                <strong>JavaScript</strong>, APP para <strong>Android</strong> y algunas modificaciones en páginas de
-                <strong>Wordpress</strong>
-                pero pronto ire subiendo más cosas. <br> Revisa mi Portafolio en el Siguiente <br><br>
-                <a href="http://portafolio.hectorvaldesm.com/"><input type="button" class="btn" value="Link" /></a>
-            </p>
-            <!-- <img class="img-trabajos" src="img/trabajos.png" alt="imagen de trabajo"> -->
-            <span><i id='spin1'class="fas fa-cog"></i><i id='spin2' class="fas fa-cog"></i></span>
-
-        </div>
-    </div>
-
-    <!-- contacto -->
-    <div id="sec-04" data-aos="flip-left" data-aos-duration="1000">
-        <div class="tittle-contact">
-            <h1 class="h1-contactame">Contactame</h1>
-        </div>
-        <div class="div-1">
-            <p>Si quieres saber más sobre mí o sobre mi trabajo enviame un mensaje.</p>
-        </div>
-        <form method="post" action="/contacto.php">
-            <div class="container-formulario" >
-                <div class="div-2">
-                    <input class="form-input form-name" type="text" name="name" id="name" placeholder="Nombre..."
-                        required />
-                    <input class="form-input form-email" type="email" name="email" id="email"
-                        placeholder="Email..." required /> 
-                    <input class="form-input" type="text" name="subject"
-                        id="subject" placeholder="Asunto..." required />
-                    <textarea class="form-input" name="message"
-                        id="message" placeholder="Mensaje..." rows="6" required></textarea>
-                </div>                
-                <div class="div-3">
-                    <input type="submit" class="btn" value="Enviar" name="enviar" />
-                    <input type="reset" value="Limpiar" class="btn-limpiar" />
-                </div>
+        <div class="trabajos-up"><div class="trabajos-radius-up"></div></div>
+            <div class="container-trabajos">
+                <h1 class="h1-trabajos">Proyectos</h1>
+                <p>Tengo pocos proyectos creados, hasta ahora algunas pruebas para practicar con
+                    <strong>JavaScript</strong>, APP para <strong>Android</strong> y algunas modificaciones en páginas
+                    de
+                    <strong>Wordpress</strong>
+                    pero pronto ire subiendo más cosas. <br><br> Puedes revisar mi Portafolio en el Siguiente <br><br>
+                    <a href="http://portafolio.hectorvaldesm.com/"><input type="button" class="btn" value="Link" /></a>
+                </p>
+                <!-- <img class="img-trabajos" src="img/trabajos.png" alt="imagen de trabajo"> -->
+                <span><i id='spin1' class="fas fa-cog"></i><i id='spin2' class="fas fa-cog"></i></span>
             </div>
-        </form>
+        <div class="trabajos-down"><div class="trabajos-radius-down"></div></div>
+    </div>
+    <hr id="hr_separation">
+    <!-- contacto -->
+    <div id="sec-04" data-aos="fade-up" data-aos-duration="1000">
+        <div class="tittle-contact">
+            <h1 class="h1-contactame">Contáctame</h1>
+        </div>
+        <div class="form-padre">
+            <div class="div-1 text-center">
+                <p>Si quieres saber más sobre mí o sobre mi trabajo enviame un mensaje.</p>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <form method="post" action="/contacto.php">
+                <div class="container-formulario">
+                    <div class="div-2">
+                        <input class="form-input form-name" type="text" name="name" id="name" placeholder="Nombre..."
+                            required />
+                        <input class="form-input form-email" type="email" name="email" id="email" placeholder="Email..."
+                            required />
+                        <input class="form-input" type="text" name="subject" id="subject" placeholder="Asunto..."
+                            required />
+                        <textarea class="form-input" name="message" id="message" placeholder="Mensaje..." rows="6"
+                            required></textarea>
+                    </div>
+                    <div class="div-3">
+                        <input type="submit" class="btn" value="Enviar" name="enviar" />
+                        <input type="reset" value="Limpiar" class="btn-limpiar" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
 
     <!-- Boton subir -->
