@@ -327,15 +327,6 @@ p {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 600px) {
-  .image-profile {
-    display: none;
-  }
-
-  .image-me {
-    margin-top: 30px;
-  }
-}
 .img-trabajos {
   max-width: 500px;
   width: 100%;
@@ -345,14 +336,22 @@ p {
 }
 
 .image-me {
-  max-width: 200px;
+  max-width: 50%;
   border: 5px solid #efefef;
-  transform: rotate(-8deg);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  transform: rotate(4deg);
+  margin: 5rem 0;
   box-shadow: 15px 15px 5px #000;
 }
 
+@media only screen and (max-width: 600px) {
+  .image-profile {
+    display: none;
+  }
+
+  .image-me {
+    max-width: 80%;
+  }
+}
 .container-hero {
   display: grid;
   width: 90%;
@@ -603,9 +602,6 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-  .container-trabajos {
-    border-top-left-radius: 30%;
-  }
   .container-trabajos p {
     margin: 0 5px 10px 5px;
   }

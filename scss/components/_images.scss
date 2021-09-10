@@ -5,14 +5,7 @@
     border-radius: 50%;
     // margin-top: 60px;
 }
-@media only screen and (max-width: 600px) {
-    .image-profile {
-        display: none;
-    }
-    .image-me{
-        margin-top: 30px;
-    }
-}
+
 .img-trabajos {
     max-width: 500px;
     width: 100%;
@@ -21,11 +14,19 @@
     margin-top: 20px;
 }
 .image-me{
-    max-width: 200px;
+    max-width: 50%;
     border: 5px solid $white-color;
-    transform: rotate(-8deg);
-    margin-top: 30px;
-    margin-bottom: 30px;
+    transform: rotate(4deg);
+    margin: 5rem 0;
 
     box-shadow: 15px 15px 5px $dark;
+}
+
+@media only screen and (max-width: 600px) {
+    .image-profile {
+        display: none;
+    }
+    .image-me{
+        max-width: 80%;
+    }
 }
