@@ -95,8 +95,6 @@ nav {
 }
 /*FOOTER*/
 .footer-basic {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 40px 0;
   background-color: #161a1d;
@@ -615,14 +613,13 @@ p {
 .caja-gracias {
   text-align: center;
 }
-.caja-gracias .img-pato {
-  width: 100%;
-  height: auto;
+.caja-gracias .tittle-gracias {
+  margin: 0;
 }
-.caja-gracias .img-patoimg {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
+
+.footer-absolute {
+  position: absolute;
+  bottom: 0;
 }
 
 * {

@@ -35,7 +35,8 @@ function openMenu(){
 
 
 //Loader page
-window.setTimeout(loading, 1300);
+window.onload = ()=>{
+    window.setTimeout(loading, 1300);
 
 function loading(){
     let loading = document.querySelector('.loading');
@@ -50,6 +51,7 @@ function loading(){
     }, 40);
     
 };
+}
 
 //up effect
 window.onscroll = ()=>{

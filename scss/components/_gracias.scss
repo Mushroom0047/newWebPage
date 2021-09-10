@@ -1,23 +1,12 @@
 .caja-gracias{
     text-align: center;
-
-    .img-pato {
-        width: 100%;
-        height: auto;
-        
-        &img{
-            width: 100%;
-            height: auto;
-            max-height: 200px;     
-        }
-             
+    .tittle-gracias{
+        margin: 0;
     }
+
 }
 
-@media only screen and (max-width: 600px) {
-    .caja-gracias{
-        // .img-pato{
-        //     width: 50%;
-        // }
-    }
+.footer-absolute{
+    position: absolute;
+    bottom: 0;
 }
