@@ -12,6 +12,9 @@
     <meta http-equiv="content-language" content="es">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
     <!-- AOS cs -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -166,7 +169,7 @@
             Con el fin de mejorar mis habilidades en <strong>Wordpress</strong> y compartir las cosas que me gustan, decidí 
             crear mi blog personal.
 <br>
-            En estr blog encontraras una variedad de contenido, <strong>Reviews de juegos</strong> , <strong>tips de Programación</strong>, <strong>dibujos</strong> y todo lo que se me ocurra ponerle. 
+            En este blog encontraras diverso tipo de contenido, <strong>Reviews de juegos</strong> , <strong>tips de Programación</strong>, <strong>dibujos</strong> y todo lo que se me ocurra agregarle. 
             <img class="image-me" src="img/blog.png" alt="Imagen referencial de mi blog">
             <br>            
             <div class="btn-download text-center">
@@ -174,7 +177,6 @@
                 <a href="https://blog.hectorvaldesm.com/" target="_blank" rel="noopener noreferrer"><input
                         type="button" class="btn btn-warning" value="Mushroom Blog !" /></a>
             </div>
-        </p>
     </div>
 </div>
 
@@ -190,7 +192,7 @@
                 <p>Si quieres saber más sobre mí o sobre mi trabajo enviame un mensaje.</p>
                 <i class="fas fa-envelope"></i>
             </div>
-            <form method="post" action="/contacto.php">
+            <form id="contact-form" method="post" action="/contacto.php">
                 <div class="container-formulario">
                     <div class="div-2">
                         <input class="form-input form-name" type="text" name="name" id="name" placeholder="Nombre..."
@@ -200,11 +202,16 @@
                         <input class="form-input" type="text" name="subject" id="subject" placeholder="Asunto..."
                             required />
                         <textarea class="form-input" name="message" id="message" placeholder="Mensaje..." rows="6"
-                            required></textarea>
+                            required></textarea>                            
                     </div>
                     <div class="div-3">
-                        <input type="submit" class="btn" value="Enviar" name="enviar" />
-                        <input type="reset" value="Limpiar" class="btn-limpiar" />
+
+                        <button class="g-recaptcha" 
+        data-sitekey="6LexBgEdAAAAAAiYE_jN6BFQF0gXXmKXUze2U1D_" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+                        <!-- <input type="submit" class="btn" value="Enviar" name="enviar" /> -->
+                        <!-- <input type="reset" value="Limpiar" class="btn-limpiar" /> -->
                     </div>
                 </div>
             </form>
@@ -242,5 +249,11 @@
     AOS.init();
 </script>
 <script src="js/matrix.js"></script>
+
+<script>
+    function onSubmit(token) {
+      document.getElementById("contact-form").submit();
+    }
+  </script>
 
 </html>
