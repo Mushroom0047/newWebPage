@@ -1,21 +1,33 @@
-.container-sobremi{
-    width: 90%;
+.sobremi-div{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin: auto;
-    text-align: center;
-    border-bottom-right-radius: 50%;
-    background-color: $dark-color;
+    
+    .descip-div{
+        width: 50%;
+    }
 
-    .descrip-me{
-        margin: 0 25%;
+    .image-div{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .container-sobremi{
-        border-bottom-right-radius: 30%;
+@media only screen and (max-width: 600px) {
+    .sobremi-div{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
 
-        .descrip-me{
-            margin: 0;
+        .descip-div, .image-div{
+            width: 100%;
         }
     } 
+    
 }

@@ -13,6 +13,7 @@
         color: $dark-color;
         cursor: pointer;
         font-weight: 700;
+        border-radius: 0px; 
     }
 }
 .btn {
@@ -27,8 +28,9 @@
 
     &:hover {
         color: $dark-color;
-        cursor: pointer;    
-        font-weight: 900;    
+        cursor: pointer;   
+        font-weight: 900; 
+        border-radius: 0px; 
     }
 }
 .btn-download{

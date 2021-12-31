@@ -12,6 +12,8 @@
 @import "components/scroll";
 @import "components/trabajos";
 @import "components/gracias";
+@import "components/servicio";
+
 
 *{
     height: auto;
@@ -48,6 +50,9 @@ strong {
 #hr_separation {
     border-color: $yellow-color;
     margin: 10% 0;
+}
+#hr_separation-sp {
+    border-color: $yellow-color;
 }
 @media only screen and (max-width: 600px) {
     .loading{

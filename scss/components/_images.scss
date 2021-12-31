@@ -14,19 +14,54 @@
     margin-top: 20px;
 }
 .image-me{
-    max-width: 50%;
+    max-width: 80%;
     border: 5px solid $white-color;
     transform: rotate(4deg);
     margin: 5rem 0;
 
     box-shadow: 15px 15px 5px $dark;
 }
+.image-web-service{
+    max-width: 75%;
+    margin: 5rem 0;
+}
 
+.images-portfolio{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+    div{
+        height:400px;
+        margin: auto;
+        width: 25%;
+        overflow-y: scroll;
+
+        img{
+            width: 100%;
+        }
+    }
+}
 @media only screen and (max-width: 600px) {
     .image-profile {
         display: none;
     }
     .image-me{
         max-width: 80%;
+    }
+    .image-web-service{
+        max-width: 100%;
+        margin: 5rem 0;
+    }
+
+    .images-portfolio{
+        width: 95%;
+        margin: auto;
+        gap: 60px;
+        div{
+            width: 100%;
+            height: 200px;
+        }
     }
 }
