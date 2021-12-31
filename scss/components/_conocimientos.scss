@@ -37,10 +37,17 @@
   div{
     background-color: $dark-bg;
     border-radius: 5%;
-    box-shadow: 10px 15px 5px $dark;
+    box-shadow: 10px 15px 50px $dark;
     text-align: center;
     width: 300px;
     height: 400px;
-  }
 
+    &:hover{
+       background-color: $yellow-color;
+       transition: 0.5s;
+       p strong{
+         color: $white-color;
+       }
+    }
+  }
 }
