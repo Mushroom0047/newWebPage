@@ -55,34 +55,39 @@
     <!-- HERO -->
     <section id="sec-00">
         <div class="container-hero">
-            <div class="social-hero">
-                <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/mushroom.47/"><i
-                        class="fab fa-instagram"></i></a>
-                <a rel="noopener noreferrer" target="_blank"
-                    href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m"><i class="fab fa-linkedin-in"></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.twitter.com/Mushroom0047"><i
-                        class="fab fa-twitter"></i></a>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.github.com/Mushroom0047"><i
-                        class="fab fa-github"></i></a>
-            </div>
-            <div class="titulo-hero">
-                <h1 class="typewriter"></h1>
-                <h3>Analista Programador</h3>
-            </div>
+            <div class="container-info">
+                <div class="social-hero">
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/mushroom.47/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.twitter.com/Mushroom0047"><i
+                            class="fab fa-twitter"></i></a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.github.com/Mushroom0047"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="titulo-hero">
+                    <h1 class="typewriter"></h1>
+                    <h3>Analista Programador</h3>
+                </div>
 
-            <div class="button-hero">
-                <a href="#sec-03"><input class="btn-portafolio" type="button" value="Portafolio" /></a>
-                <a href="#sec-01"><input class="btn" type="button" value="Sobre mí" /></a>
+                <div class="button-hero">
+                    <a href="#sec-03"><input class="btn-portafolio" type="button" value="Portafolio" /></a>
+                    <a href="#sec-01"><input class="btn" type="button" value="Sobre mí" /></a>
+                </div>
             </div>
-            <div class="image-hero">
-                <img class="image-profile" src="img/avatar.jpg" alt="profile foto" />
+            <div class="image-hero" data-tilt>
+                <div class="image-profile-tilt" >
+                    <img class="image-profile"  src="img/avatar.png" alt="profile foto" />
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About me -->
     <div class="caja-sobre-mi" id="sec-01">
-        <div class="sobremi-div" >
+        <div class="sobremi-div">
             <div class="descip-div" data-aos="fade-right" data-aos-duration="1000">
                 <h1 class="h1-sobremi">Sobre mí</h1>
                 <p class="descrip-me">
@@ -235,7 +240,7 @@
                             type="button" class="btn btn-web" value="Conocer más" /></a>
                 </div>
             </div>
-            <div class="content-image-btn"  data-aos="fade-left" data-aos-duration="2000">
+            <div class="content-image-btn" data-aos="fade-left" data-aos-duration="2000">
                 <img class="image-web-service" src="img/undraw_startup_life_re_8ow9.svg" alt="Imagen referencial" />
             </div>
         </div>
@@ -287,7 +292,8 @@
         <footer>
             <div class="social-footer">
                 <a href="https://www.instagram.com/mushroom.47/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.twitter.com/Mushroom0047" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.github.com/Mushroom0047" target="_blank"><i class="fab fa-github"></i></a>
             </div>
@@ -304,5 +310,6 @@
     AOS.init();
 </script>
 <script src="js/matrix.js"></script>
+<script type="text/javascript" src="/js/vanilla-tilt.js"></script>
 
 </html>
