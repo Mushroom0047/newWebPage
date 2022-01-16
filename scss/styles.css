@@ -40,6 +40,7 @@ nav {
   position: absolute;
   top: 20px;
   left: 0;
+  z-index: 3;
 }
 
 .nav-menu {
@@ -122,10 +123,15 @@ nav {
   margin-bottom: 0;
 }
 
+.footer-basic .logo-footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* Icons */
 .social-hero {
-  text-align: left;
   padding-bottom: 25px;
+  text-align: left;
 }
 
 .social-footer {
@@ -134,18 +140,18 @@ nav {
 }
 
 .social-footer a, .social-hero a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
   border-radius: 50%;
   border: 1px solid #efefef;
-  margin: 0 8px;
   color: #efefef;
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
   -webkit-transition: all 1s;
   transition: all 1s;
+  margin: 0 8px;
+  width: 40px;
 }
 
 .social-hero > a:hover, .social-footer > a:hover {
@@ -156,14 +162,14 @@ nav {
 }
 
 .fa-cog {
-  font-size: 10rem;
   color: #dfac13;
+  font-size: 10rem;
 }
 
 #spin1, #spin2 {
-  margin: 30px 0;
   -webkit-animation-name: spin;
           animation-name: spin;
+  margin: 30px 0;
 }
 
 #spin1 {
@@ -178,9 +184,6 @@ nav {
 }
 
 #spin2 {
-  position: relative;
-  right: 20px;
-  top: -8px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -188,6 +191,9 @@ nav {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   animation-direction: reverse;
+  position: relative;
+  right: 20px;
+  top: -8px;
 }
 
 @-webkit-keyframes spin {
@@ -208,32 +214,32 @@ nav {
   .fa-cog {
     font-size: 8rem;
   }
-}
-
-h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: xx-large;
-  color: #efefef;
-  letter-spacing: 2px;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  text-align: center;
+  .social-hero {
+    padding-bottom: 5px;
+  }
 }
 
 .typewriter {
-  margin-top: 30px;
+  color: #efefef;
+  font-family: 'Anton', sans-serif;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-h3 {
-  font-size: .9rem;
+h1 {
   color: #efefef;
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
 }
 
 h2 {
   color: #efefef;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Anton', sans-serif;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
@@ -250,41 +256,47 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .typewriter {
+    margin-top: 0px;
+  }
+}
+
 .btn-portafolio, .btn-limpiar {
   border-radius: 10px;
   border: 2px solid #dfac13;
   background-color: #212529;
-  padding: 10px 25px;
   color: #efefef;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
+  padding: 10px 25px;
   letter-spacing: 1.5px;
 }
 
 .btn-portafolio:hover, .btn-limpiar:hover {
   background-color: #dfac13;
+  border-radius: 0px;
   color: #212529;
   cursor: pointer;
   font-weight: 700;
-  border-radius: 0px;
 }
 
 .btn {
-  color: #efefef;
-  padding: 10px 25px;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
   background-color: #dfac13;
   border-radius: 5px;
   border: none;
+  color: #efefef;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 25px;
   letter-spacing: 2px;
 }
 
 .btn:hover {
+  border-radius: 0px;
   color: #212529;
   cursor: pointer;
   font-weight: 900;
-  border-radius: 0px;
 }
 
 .btn-download {
@@ -469,6 +481,12 @@ p {
   width: 100%;
 }
 
+.logo-white {
+  -webkit-filter: drop-shadow(5px 5px 10px #000);
+          filter: drop-shadow(5px 5px 10px #000);
+  width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .image-me {
     max-width: 80%;
@@ -476,6 +494,9 @@ p {
   .image-web-service {
     max-width: 100%;
     margin: 5rem 0;
+  }
+  .logo-white {
+    width: 70px;
   }
   .images-portfolio {
     width: 95%;
@@ -485,6 +506,17 @@ p {
   .images-portfolio div {
     width: 100%;
     height: 200px;
+  }
+  .image-hero {
+    margin-top: 10px;
+    width: 50%;
+    height: 120px;
+  }
+  .image-profile-tilt .image-profile {
+    width: 70%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
   }
 }
 
@@ -518,6 +550,12 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-hero {
+    top: 15%;
+  }
 }
 
 .sobremi-div {
@@ -556,7 +594,7 @@ p {
   width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .sobremi-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -575,66 +613,24 @@ p {
   }
 }
 
-.description-knowledge {
-  margin: 2% auto;
-  text-align: center;
-  width: 60%;
-}
-
-.knowledge-item {
-  padding: 5px 0;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-  color: #efefef;
-  margin: 0 0 15px 20px;
-}
-
-.knowledge-item i {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background-color: #efefef;
-  text-align: center;
-  border-radius: 50%;
-  color: #dfac13;
-  margin-right: 10px;
-}
-
-.knowledge-father {
+.flex-knowledge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin: auto;
-  width: 80%;
 }
 
-.knowledge-father div {
-  background-color: #161a1d;
-  border-radius: 5%;
-  -webkit-box-shadow: 10px 15px 50px #000;
-          box-shadow: 10px 15px 50px #000;
-  text-align: center;
-  width: 300px;
-  height: 400px;
+.flex-knowledge .knowledge-item img {
+  width: 64px;
 }
 
-.knowledge-father div:hover {
-  background-color: #dfac13;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.knowledge-father div:hover p strong {
-  color: #efefef;
+@media only screen and (max-width: 600px) {
+  .flex-knowledge .knowledge-item img {
+    width: 48px;
+  }
 }
 
 /* width */
@@ -718,8 +714,9 @@ p {
   margin: 0 20%;
 }
 
-.container-trabajos .h1-trabajos {
-  margin: 0;
+.container-trabajos a {
+  color: #dfac13;
+  text-decoration: none;
 }
 
 .trabajos-up, .trabajos-down {

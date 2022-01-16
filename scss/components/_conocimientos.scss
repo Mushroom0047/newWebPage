@@ -1,53 +1,17 @@
-//Description
- .description-knowledge{
-  margin: 2% auto;
-  text-align: center;
-  width: 60%;
-}
-// Icono y parrafo
-.knowledge-item {
-  padding: 5px 0;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-  color: $white-color;
-  margin: 0 0 15px 20px;
-    i {
-      font-size: 24px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      background-color: $white-color;
-      text-align: center;
-      border-radius: 50%;
-      color: $yellow-color;
-      margin-right: 10px;
-    }
-}
-
-//Cards
-.knowledge-father{
+// lista
+.flex-knowledge{
   display: flex;
-  gap: 30px;
-  justify-content: space-around;
   flex-flow: row wrap;
-  margin: auto;
-  width: 80%;
+  
+  .knowledge-item img{
+    width: 64px;
+  }
+}
 
-  div{
-    background-color: $dark-bg;
-    border-radius: 5%;
-    box-shadow: 10px 15px 50px $dark;
-    text-align: center;
-    width: 300px;
-    height: 400px;
-
-    &:hover{
-       background-color: $yellow-color;
-       transition: 0.5s;
-       p strong{
-         color: $white-color;
-       }
+@media only screen and (max-width: 600px) {
+  .flex-knowledge{
+    .knowledge-item img{
+      width: 48px;
     }
   }
 }

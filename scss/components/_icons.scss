@@ -1,24 +1,24 @@
 /* Icons */
 .social-hero {
-  text-align: left;
   padding-bottom: 25px;
+  text-align: left;
 }
 .social-footer {
   text-align: center;
   padding-bottom: 25px;
 }
 .social-footer  a, .social-hero a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
   border-radius: 50%;
   border: 1px solid $white-color;
-  margin: 0 8px;
   color: $white-color;
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
   transition: all 1s;
+  margin: 0 8px;
+  width: 40px;
 }
 
 .social-hero > a:hover, .social-footer  > a:hover {
@@ -28,12 +28,12 @@
 }
 
 .fa-cog{
-  font-size: 10rem;
   color: $yellow-color;
+  font-size: 10rem;
 }
 #spin1, #spin2{
-  margin: 30px 0;
   animation-name: spin;
+  margin: 30px 0;
 }
 #spin1{
   animation-duration: 5s;
@@ -43,13 +43,13 @@
 }
 
 #spin2{
-  position: relative;
-  right: 20px;
-  top: -8px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
+  position: relative;
+  right: 20px;
+  top: -8px;
 }
 
 @keyframes spin {
@@ -59,5 +59,8 @@
 @media only screen and (max-width: 600px) {
   .fa-cog{
     font-size: 8rem;
+  }
+  .social-hero {
+    padding-bottom: 5px;
   }
 }

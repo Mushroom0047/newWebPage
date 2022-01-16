@@ -41,7 +41,7 @@
 .image-web-service{
     max-width: 75%;
     margin: 5rem 0;
-    // filter: drop-shadow(5px 5px 10px $yellow-color);
+    //filter: drop-shadow(5px 5px 10px $yellow-color);
 }
 
 .images-portfolio{
@@ -61,6 +61,14 @@
         }
     }
 }
+
+
+// logo-white
+.logo-white{
+    filter: drop-shadow(5px 5px 10px $dark);
+    width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     .image-me{
         max-width: 80%;
@@ -70,6 +78,9 @@
         margin: 5rem 0;
     }
 
+    .logo-white{
+        width: 70px;
+    }
     .images-portfolio{
         width: 95%;
         margin: auto;
@@ -77,6 +88,20 @@
         div{
             width: 100%;
             height: 200px;
+        }
+    }
+    .image-hero{
+        margin-top: 10px;
+        width: 50%;
+        height: 120px;
+        // max-width: 100px;
+    }
+    .image-profile-tilt{
+        .image-profile {
+            width: 70%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 50%;
         }
     }
 }
