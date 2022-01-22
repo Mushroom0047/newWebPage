@@ -5,6 +5,11 @@
   
   .knowledge-item img{
     width: 64px;
+
+    &:hover{
+      filter: grayscale(80%);
+      transition: 1s;
+    }
   }
 }
 

@@ -1,12 +1,3 @@
-// h1 {
-//     font-family: 'Anton', sans-serif;
-//     font-size: xx-large;
-//     color: $white-color;
-//     letter-spacing: 2px;
-//     margin-top: 100px;
-//     margin-bottom:  30px;
-//     text-align: center;
-// }
 .typewriter{
     color: $white-color;
     font-family: 'Anton', sans-serif;
@@ -40,8 +31,11 @@ p {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-width: 768px) {
     .typewriter{
         margin-top: 0px;
+    }
+    p{
+        font-size: 1.2rem;
     }
 }

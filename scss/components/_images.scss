@@ -30,12 +30,17 @@
     margin-top: 20px;
 }
 .image-me{
-    max-width: 80%;
     border: 5px solid $white-color;
-    transform: rotate(4deg);
-    margin: 5rem 0;
-
     box-shadow: 15px 15px 5px $dark;
+    max-width: 80%;
+    margin: 5rem 0;
+    transform: rotate(4deg);
+    transition: 1s;
+
+    &:hover{
+        filter: contrast(200%);
+        transition: 1s;
+    }
 }
 
 .image-web-service{

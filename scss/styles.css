@@ -256,9 +256,12 @@ p {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-width: 768px) {
   .typewriter {
     margin-top: 0px;
+  }
+  p {
+    font-size: 1.2rem;
   }
 }
 
@@ -443,13 +446,22 @@ p {
 }
 
 .image-me {
-  max-width: 80%;
   border: 5px solid #efefef;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
-  margin: 5rem 0;
   -webkit-box-shadow: 15px 15px 5px #000;
           box-shadow: 15px 15px 5px #000;
+  max-width: 80%;
+  margin: 5rem 0;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.image-me:hover {
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .image-web-service {
@@ -625,6 +637,13 @@ p {
 
 .flex-knowledge .knowledge-item img {
   width: 64px;
+}
+
+.flex-knowledge .knowledge-item img:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media only screen and (max-width: 600px) {

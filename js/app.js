@@ -81,3 +81,13 @@ envelope.addEventListener('mouseleave', ()=>{
         envelope.classList.replace('fa-envelope-open','fa-envelope');
     }
 });
+
+
+
+// !Audio Dross
+let imgMe = document.querySelector(".image-me");
+const audioDross = new Audio('/img/Sonido de piano de Dross.wav');
+
+imgMe.addEventListener('mouseover', ()=>{
+    audioDross.play();
+})
