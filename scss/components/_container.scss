@@ -1,0 +1,402 @@
+//!flexbox confi
+.flexbox-js {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  justify-content: center;
+
+  .flexbox-container {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 100px;
+  }
+}
+
+// !Games styles
+.flexbox-games{
+  display: flex;
+  flex-flow: column nowrap;
+
+  .games-content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .games-app{
+    display: flex;
+    flex-flow: column nowrap;
+
+    div{
+      iframe{
+        width: 90%;
+      }
+    }
+
+  }
+}
+
+// !Website styles
+.flexbox-website{
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+
+  a{
+    color: $yellow-color;
+  }
+
+  .titulo{
+    width: 70%;
+  }
+  .paginas-web{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+    justify-content: center;
+  
+    .box-content{
+      border: 1px solid $yellow-color;
+      box-shadow: 15px 15px 15px $dark;
+      border-radius: 5px;
+      width: 24%;
+      
+      .img-content{
+        border-radius: 5px;
+        height: 400px;
+        overflow: scroll;
+      }
+
+      .button-content{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+
+
+//!All boxes of code
+.bg-code {
+  text-align: left;
+  display: none;
+  height: 200px;
+  overflow-y: scroll;
+}
+//!All apps styles code
+.js-app {
+  background-color: $yellow-color;
+  border-radius: 50px 0 50px 0;
+}
+
+//?Counter
+.counter-box{
+    max-height: 200px;
+}
+
+//?TO-DO list style
+.todo-box {
+    height: auto;
+  #txt-in {
+    //*input tarea
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    &:focus {
+      outline: 2px solid $red-color;
+    }
+  }
+  .fa-trash-alt {
+    //*icono basura
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+
+  .miLista {
+    .li-todo {
+      background-color: $white-color;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      padding: 12px;
+      list-style: none;
+      text-align: left;
+      width: 90%;
+      &:hover {
+        background-color: $yellow-dark;
+      }
+    }
+  }
+  .complete-list {
+    text-decoration: line-through;
+    background-color: $yellow-dark;
+  }
+}
+
+//?Pomodoro
+
+//*Backgrounds for pom
+.bg-red{   
+    background-color: $red-color;
+}
+.bg-green{  
+    background-color: $green-color;
+}
+.pomodoro-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+
+    .tarea-pomodoro{
+        background-color: $darkred-color;
+        margin: 0 auto 0 auto;
+        width: 80%;
+    }
+
+    .first-flex-pomodoro{
+        // background-color: $red-color;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 15px;
+        justify-content: center;
+        margin: 20px auto 0px auto;
+        width: 80%;
+
+        .fa-sync-alt{
+            //*Icon reset cycle
+            cursor: pointer;
+        }
+    }
+    .second-flex-pomodoro{
+        margin-top: 20px;
+
+        .input-text-pomodoro{
+            .inputTaskPom{
+                background-color: $white-color;
+                border: none;
+                border-radius: 5px;
+                height: 32px;
+                &:focus{
+                    outline: 2px solid $red-color;
+                }
+            }
+        }
+        .third-flex-pomodoro{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+    }
+}
+
+//?Frases motivacionales
+.frases-box{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    .frases-b{
+      margin-bottom: 30px;
+    }
+    .frase-mot{
+        font-style: italic;
+        font-weight: bold;
+    }
+
+}
+
+// ?Poke API
+.poke-box{
+  .poke-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    // justify-content: space-evenly;
+    align-items: center;
+  }
+  .poke-fotos img{
+    border-radius: 15px;
+    filter: drop-shadow(15px 10px 15px $dark);
+    margin-bottom: 30px;
+  }
+
+  // *PokeLista
+  .form-select{
+    width: 150px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+
+    &:focus{
+        outline: 0;
+        border: 2px solid $red-color;
+    }
+  }
+
+  // *Filas y columnas
+  .row-th{
+    text-align: left;
+  }
+  th {
+    width: 50%;
+    border: 1px solid $white-color;
+    text-align: left;
+    padding: 8px;
+  }
+  td {
+    width: 50%;
+    border: 1px solid $white-color;
+    text-align: center;
+    padding: 8px;
+  }
+}
+
+// ?Converter
+.converter-box{
+  height: auto;
+  padding-bottom: 30px;
+
+  .converter-content{
+    margin-bottom: 30px;
+  }
+
+  #text_area_conversor{
+    width: 80%;
+    resize: none;
+  }
+}
+
+// ?rock paper scissors
+.flexbox-container{
+  padding: 0 10px;
+
+  .rps__score{
+    height: 30px;
+  }
+  .rps__enemy{
+    background-color: $white-color;
+    border-radius: 15px;
+    height: 100px;
+    #rps__enemy__id{
+      transform: rotate(180deg);
+    }
+  }
+  .rps__result{
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .rps__my-choice{
+    align-items: flex-start;
+    background-color: $white-color;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+    div{
+      border-radius: 50px;
+      margin: 50px 0;
+      height: 50px;
+
+      img{
+        cursor: pointer;
+        transition: .1s;
+        width: 64px;
+        &:hover{
+          filter: drop-shadow(5px 2px 5px $dark);
+        }
+      }
+
+      .rps__image__on{
+        width: 96px;
+      }
+    }
+  }
+
+}
+
+//!Responsive
+@media only screen and (max-width: 640px) {
+  .flexbox-js {
+    .flexbox-container {
+      margin-bottom: 30px;
+        width: 100%;
+
+    }
+    .counter-code{
+        order: 1;
+    }
+    .counter-box{
+        order: 2;
+    }
+    .todo-code{
+        order: 3;
+    }
+    .todo-box{
+        order: 4;
+    }
+    .pomodoro-code{
+        order: 5;
+    }
+    .pomodoro-box{
+        order: 6;
+    }
+    .frases-code{
+        order: 7;
+    }
+    .frases-box{
+        order: 8;
+    }
+    .poke-code{
+        order: 9;
+    }
+    .poke-box{
+        order: 10;
+    }
+    .converter-code{
+        order: 11;
+    }
+    .converter-box{
+        order: 12;
+    }
+    .rps-code{
+        order: 13;
+    }
+    .rps-box{
+        order: 14;
+    }
+
+  }
+
+  .flexbox-website{
+
+    .titulo{
+      width: 90%;
+    }
+
+    .paginas-web{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      .box-content{
+        width: 90%;
+
+        .img-content{
+          height: 200px;
+        }
+      }
+    
+    }
+  
+  }
+}

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="desarrollador Frontend programador informático" />
+  <meta name="description"
+      content="programador junior egresado de Inacap con conocimientos en Frontend, Backend, desarrollo aplicaciones escritorio - móvil y diseño de videojuegos." />
+  <meta name="author" content="Hector Valdes M" />
+  <meta name="robots" content="index, nofollow" />
+  <meta http-equiv="content-type" content="text/html;UTF-8" />
+  <meta http-equiv="content-language" content="es" />
+  <link rel="stylesheet" href="scss/styles.css" />
+    
+        <!-- AOS cs -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+        <link rel="icon" type="image/png" href="img/logo cuadrado.png" />
+        <title>Héctor Valdés - Frontend Developer</title>
+    </head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <!-- Nav bar -->
+  <header class="header">
+    <nav class="navbar">
+      <li class="nav-item-hamburger">
+        <a class="nav-hamburger"><i class="fas fa-bars"></i></a>
+      </li>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <img class="logo-white" src="/img/logoWhite.png" alt="logo-white">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://hectorvaldesm.com/">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sec-01">Proyectos JS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sec-02">Videojuegos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sec-03" class="nav-link">Páginas web</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="sec-00">
+      <div class="container-hero">
+        <div class="container-info">
+          <div class="social-hero">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/mushroom.47/"><i
+                class="fab fa-instagram"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.twitter.com/Mushroom0047"><i
+                class="fab fa-twitter"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.github.com/Mushroom0047"><i
+                class="fab fa-github"></i></a>
+          </div>
+          <div class="titulo-hero">
+            <h1>Frontend Developer</h1>
+            <p>Trabajos y proyectos realizados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+        <!-- !Paginas web -->
+        <section id="sec-03">
+          <div class="flexbox-website">
+            <div class="titulo">
+              <h2>Páginas web</h2>
+              <p>En esta sección se encuentran las páginas web que he dasarrollado por mi cuenta y las que he participado en el desarrollo con la empresa <strong><a href="http://designseogroup.com" target="_blank"
+                    rel="noopener noreferrer">DesignSeo.</a></strong>
+                La mayoría fueron creadas con <strong>WordPress</strong> utilizando herramientas como <strong>Elementor</strong>, <strong>Woocommerce</strong>, entro otros.</p>
+            </div>
+    
+            <!-- *Paginas -->
+            <div class="paginas-web">
+              <!-- !ARMAG -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/armag.png"
+                        alt="armag website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Armag</h5>
+                  <p>Sitio web cotizador desarrollado con <strong>Wordpress, Elementor y Woocommerce</strong></p>
+                  <a href="https://armag.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !EPP -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/eppSeguridad.png"
+                        alt="eppSeguridad website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>EPP Seguridad</h5>
+                  <p>Sitio web modificado y desarrollado en <strong>Prestashop</strong></p>
+                  <a href="https://eppseguridad.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Isuda -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/isuda.png"
+                        alt="inmobiliaria isudamericana website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Inmobiliaria sudamericana</h5>
+                  <p>Sitio web desarrollado con <strong>Wordpress, Elementor y Woocommerce</strong></p>
+                  <input type="button" class="btn btn-grey" value="Ver Página">
+                </div>            
+              </div>
+              <!-- !lastarria -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/lastarria.png"
+                        alt="Estación lastarria website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Estación lastarria</h5>
+                  <p>Sitio web desarrollado con <strong>Wordpress, Elementor y Woocommerce</strong></p>
+                  <a href="https://estacionlastarria.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Linna -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/linna.png"
+                        alt="Linna-dem website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Linna-dem</h5>
+                  <p>Landing page desarrollada con <strong>Wordpress y Elementor</strong></p>
+                  <a href="https://linna-dem.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Miami -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/miami.png"
+                        alt="Miamiunclic website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Miamiunclic</h5>
+                  <p>Tienda e-commerce desarrollada con <strong>Wordpress, Elementor y Woocommerce</strong></p>
+                  <a href="https://www.miamiunclic.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Necesitoweb -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/Necesitoweb.png"
+                        alt="NecesitoWeb website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>NecesitoWeb</h5>
+                  <p>Tienda e-commerce desarrollada con <strong>Wordpress y Elementor, Woocommerce</strong></p>
+                  <a href="https://necesitoweb.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !RefuerzaMas -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/refuerza.png"
+                        alt="RefuerzaMas website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>RefuerzaMas</h5>
+                  <p>Sitio web desarrollado con <strong>Wordpress y Elementor</strong></p>
+                  <a href="https://refuerzamas.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !SinDeudas -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/sinDeudas.png"
+                        alt="Sin deudas website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Sin deudas</h5>
+                  <p>Sitio web desarrollado con <strong>Wordpress y Elementor</strong></p>
+                  <a href="https://sindeudas.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Cellzion -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/cellzion.png"
+                        alt="Cellzion website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Cellzion</h5>
+                  <p>Sitio web desarrollado en <strong>Odoo</strong></p>
+                  <a href="https://cellzion.cl/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!-- !Quntur -->
+              <div class="box-content">
+                <div class="img-content">
+                  <div class="img-box">
+                    <img class="img-fluid" src="/img/pages/quntur.png"
+                        alt="Quntur website">            
+                  </div>
+                </div>
+                <div class="button-content">
+                  <h5>Quntur</h5>
+                  <p>Sitio web y blog desarrollado con <strong>Wordpress y Elementor</strong></p>
+                  <a href="https://quntur.pe/" target="_blank" rel="noopener noreferrer"><input type="button" class="btn btn-yellow" value="Ver Página"></a>
+                </div>            
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </section>
+        <hr>
+        <br>
+
+    <section id="sec-01">
+      <div class="javascript-section">
+        <h2 class="main-tittle">~ Proyectos en JavaScript ~</h2>
+        <div class="flexbox-js">
+          <!-- !Contador manual -->
+          <!-- *app -->
+          <div class="js-app counter-box flexbox-container">
+            <h3 class="text-dark">Contador</h3>
+            <Button id="btnAumentar" class="btnAumentar btn btn-green">Aumentar</Button>
+            <Button id="btnDisminuir" class="btnDisminuir btn btn-red">Disminur</Button>
+            <h2><span class="digito">0</span></h2>
+          </div>
+          <!-- *code -->
+          <div class="counter-code flexbox-container">
+            <h2>Contador manual</h2>
+            <p><strong>21/03/2021</strong></p>
+            <p>Contador manual, hecho para primeros usos del DOM en <strong>Javascript</strong>, Botón Aumentar suma 1 a
+              valor de variable y botón Disminuir resta 1 al valor mientras sea mayor que 0.</p>
+            <input type="button" class="btn btn-yellow btn-counter-code" value="Mostrar código">
+            <div class="bg-code div-counter-code">
+              <pre>
+              <code class="javascript">
+      //Manual counter
+      const container = document.querySelector('.counter-box');
+      const digit = document.querySelector('.digito');
+      let counter = 0;
+      
+      container.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (e.target.classList.contains('btnAumentar')) {
+        counter++;
+        digit.textContent = counter;
+      }
+      if (e.target.classList.contains('btnDisminuir')) {
+        if (counter > 0) {
+            counter--;
+        } else {
+            counter = 0;
+        }
+        digit.textContent = counter;
+                      }
+                  });
+              </code>
+            </pre>
+            </div>
+          </div>
+
+          <!-- !TO-DO list           -->
+          <!-- *code -->
+          <div class="todo-code flexbox-container">
+            <h2>To-Do list</h2>
+            <p class=""><strong>16/03/2021</strong></p>
+            <p>Todo list donde se puede agregar tareas clickeando el icono de más y presionando enter, al clickear una
+              tarea
+              esta se tacha y se cambia el fondo, al presionar el el icono de basura eliminamos la tarea.</p>
+            <input type="button" class="btn btn-yellow btn-todo-code" value="Mostrar código">
+            <div class="bg-code div-todo-code">
+              <pre>
+            <code class="javascript">
+      //Todo list
+      //Crear boton eliminar al final de los li
+      const btnAdd = document.querySelector("#boton-ingreso");
+      const myList = document.querySelector(".miLista");
+      let txtBox = document.querySelector("#txt-in");
+      
+      //guardar texto al presionar boton
+      btnAdd.addEventListener('click', () => {
+      addTodoList();
+      });
+      txtBox.addEventListener('keyup', e => {
+      if (e.keyCode === 13) {
+          addTodoList();
+      }
+      });
+      function addTodoList() {
+      let txt = txtBox.value;
+      if (txt != '') {
+          addList(txt);
+          document.querySelector("#txt-in").value = '';
+      }
+      }
+      
+      //Check li presed
+      myList.addEventListener("click", e => {
+      //check the list
+      if (e.target.classList.contains('li-todo')) {
+          e.target.classList.toggle('complete-list');
+      }
+      //check trash
+      if (e.target.classList.contains('fa-trash-alt')) {
+          e.target.parentNode.remove();
+      }
+      });
+      
+      //Construct list
+      function addList(txt) {
+      let createLi = document.createElement("LI");//create li element
+      let content = document.createTextNode(txt);//create li content
+      createLi.appendChild(content);//add content to li
+      createLi.className = "li-todo";
+      
+      let createDeleteIcon = document.createElement("i");//create icon element
+      createDeleteIcon.className = "fas fa-trash-alt";
+      
+      myList.appendChild(createLi);
+      createLi.appendChild(createDeleteIcon);
+      }
+            </code>
+          </pre>
+            </div>
+          </div>
+          <!-- *app -->
+          <div class="js-app todo-box flexbox-container">
+            <h3>To-Do list</h3>
+            <div class="ingreso">
+              <input id="txt-in" type="text" name="caja-txt" placeholder="Agrega una tarea !">
+              <button id="boton-ingreso" class="btn btn-green"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="lista-todo">
+              <ul class="miLista">
+                <li class="li-todo">Ejemplo de tarea<i class="fas fa-trash-alt" aria-hidden="true"></i></li>
+                <li class="li-todo">Ejemplo 2 :)<i class="fas fa-trash-alt" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- !Pomodoro -->
+          <!-- *app -->
+          <audio class="ringBell" src="https://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+          <div class="pomodoro-box flexbox-container js-app">
+
+            <div class="first-flex-pomodoro bg-red">
+              <div class="caja-pom-timer">
+                <p>Timer</p>
+                <h4 class="timer">25:00</h4>
+              </div>
+              <div class="caja-pom-ciclo">
+                <p>Ciclos <i class="fas fa-sync-alt"></i></p>
+                <h4 class="cyclePom">0</h4>
+              </div>
+              <div class="caja-pom-break">
+                <p>Break</p>
+                <h4 class="breakTimer">05:00</h4>
+              </div>
+            </div>
+
+            <div class="tarea-pomodoro">
+              <h4 class="taskPom">Tarea</h4>
+            </div>
+
+            <div class="second-flex-pomodoro">
+
+              <div class="input-text-pomodoro">
+                <input type="text" placeholder="Ingrese una tarea" class="inputTaskPom">
+                <button type="button" class="btn btn-green btn-taskPom">Ingresar</button>
+              </div>
+
+              <div class="third-flex-pomodoro">
+                <div class="pom-buttons">
+                  <!-- *comenzar button -->
+                  <button type="button" class="btn btn-red btn-startPom">Comenzar</button>
+                  <!-- *Parar button -->
+                  <button type="button" class="btn btn-grey btn-stopPom " disabled>Parar</button>
+                  <!-- *Descansar button -->
+                  <button type="button" class="btn btn-green btn-breakPom">Descansar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- *code -->
+          <div class="pomodoro-code flexbox-container">
+            <h2>Pomodoro timer</h2>
+            <p class=""><strong>27/04/2021</strong></p>
+            <p>Pomodoro Timer, al clickear <strong>Comenzar</strong> inicia el temporizador de 25 minutos, al finalizar
+              este
+              conteo suena una alarma y se suma 1 al ciclo. También tiene un botón de <strong>Descansar</strong> el cual
+              inicia el conteo de 5 minutos, si se cumplen 3 ciclos de 25 minutos el descanso pasa a ser de 15 minutos.
+              <br>
+              Existe un bloque con tareas el cual podemos agregar con el cuadro de texto.
+            </p>
+            <input type="button" class="btn btn-yellow btn-pom-code" value="Mostrar código">
+            <div class="bg-code div-pom-code">
+              <pre>
+              <code class="javascript">
+      // Pomodoro timer
+      const btnStartPom = document.querySelector('.btn-startPom');
+      const btnStopPom = document.querySelector('.btn-stopPom');
+      const btnTakeBreak = document.querySelector('.btn-breakPom');
+      //task
+      let taskLabel = document.querySelector('.taskPom');
+      const taskInput = document.querySelector('.inputTaskPom');
+      const btnEnterTask = document.querySelector('.btn-taskPom');
+      const audioPom = document.querySelector('.ringBell');
+      let bgDivPom = document.querySelector('.pom-div');
+      let cyclePom = document.querySelector('.cyclePom');
+      let bgDivTask = document.querySelector('.taskBG');
+      // Use Variables
+      let cycleValue = 0;
+      let timePom = 25* 60;
+      let timeShortBreak = 5 * 60;
+      let timeLongBreak = 15 * 60;
+      let timeBreakUse = timeShortBreak;
+      const countDownEl = document.querySelector('.timer');
+      const countDownBreakEl = document.querySelector('.breakTimer');
+      let pomIsPlaying = false;
+      let intervalID;
+      
+      //Enter a task button
+      btnEnterTask.addEventListener('click', () => {
+          addTask();
+      });
+      taskInput.addEventListener('keyup', e => {
+          if (e.keyCode === 13) {
+              addTask();
+          }
+      });
+      
+      //Start countdown button
+      btnStartPom.addEventListener('click', () => {
+          if (pomIsPlaying) {//Pause
+              clearInterval(intervalID);
+              btnStartPom.innerHTML = "Comenzar";
+              document.querySelector('.btn-stopPom').disabled = true;
+              pomIsPlaying = false;
+          } else {// Play
+              pomStyle("pom");
+              stopBreak();
+              intervalID = setInterval(updateCountDown, 1000);
+              btnStartPom.innerHTML = "Pausar";
+              document.querySelector('.btn-stopPom').disabled = false;
+              pomIsPlaying = true;
+          }
+      });
+      
+      
+      // Take a break button
+      btnTakeBreak.addEventListener('click', () => {
+          stopTimer();
+          pomStyle("break");
+          checkBreakTime(); 
+          intervalID = setInterval(updateBreakCountDown, 1000);
+          btnTakeBreak.disabled = true;
+          btnStopPom.disabled = false;
+      });
+      
+      // Stop timer
+      btnStopPom.addEventListener('click', () => {
+          if(pomIsPlaying){
+              stopTimer();
+              audioPom.play();
+          }else{
+              stopBreak();
+          }
+          
+      });
+      
+      //----------------------------FUNCTIONS-----------------------------
+      
+      // Update pom
+      function updateCountDown() {
+          if (timePom >= 0) {
+              const minutes = Math.floor(timePom / 60);
+              let seconds = timePom % 60;
+              seconds = seconds < 10 ? '0' + seconds : seconds;
+              countDownEl.innerHTML = minutes + ":" + seconds;
+              timePom--;
+          } else {
+              pomcomplete();
+              stopTimer();
+          }
+      }
+      function updateBreakCountDown(){
+          if (timeBreakUse >= 0) {
+              const minutes = Math.floor(timeBreakUse / 60);
+              let seconds = timeBreakUse % 60;
+              seconds = seconds < 10 ? '0' + seconds : seconds;
+              countDownBreakEl.innerHTML = minutes + ":" + seconds;
+              timeBreakUse--;
+          } else {       
+              audioPom.play(); 
+              stopBreak();
+          }
+      }
+      function stopBreak(){    
+          btnTakeBreak.disabled = false;
+          btnStopPom.disabled = true;
+          timeBreakUse = timeShortBreak;
+          countDownBreakEl.innerHTML = '05:00';
+          clearInterval(intervalID);
+      }
+      
+      // Reset cycle conter
+      const resetCounter = document.querySelector('.fa-sync-alt');
+      resetCounter.addEventListener('click', () => {
+          cycleValue = 0;
+          cyclePom.innerHTML = cycleValue;
+      });
+      
+      //If time is equal than zero
+      function pomcomplete() {
+          audioPom.play();
+          cycleValue++;
+          cyclePom.innerHTML = cycleValue;
+      }
+      // Stop pom function
+      function stopTimer() {
+          clearInterval(intervalID);
+          timePom = 25 * 60;
+          btnStopPom.disabled = true;
+          btnStartPom.innerHTML = "Comenzar";
+          btnTakeBreak.innerHTML = "Descansar";
+          countDownEl.innerHTML = '25:00';
+      }
+      //Pom style
+      function pomStyle(type){
+          if(type === "pom"){
+              bgDivPom.classList.add('bg-danger');
+              bgDivPom.classList.remove('bg-success');
+              bgDivTask.classList.add('task-div-red');
+              bgDivTask.classList.remove('task-div-green');
+          }else if (type === "break"){
+              bgDivPom.classList.remove('bg-danger');
+              bgDivPom.classList.add('bg-success');
+              bgDivTask.classList.remove('task-div-red');
+              bgDivTask.classList.add('task-div-green');
+          }
+      }
+      function checkBreakTime(){
+          if(cycleValue % 3 == 0 && cycleValue != 0 ){        
+              timeBreakUse = timeLongBreak;
+          }else{
+              timeBreakUse = timeShortBreak;
+          }
+      }
+      //Add task
+      function addTask() {
+          let task = taskInput.value;
+          taskLabel.innerHTML = task;
+          document.querySelector('.inputTaskPom').value = '';
+      }
+              </code>
+            </pre>
+            </div>
+          </div>
+
+          <!-- !Frases motivacionales -->
+          <!-- *code -->
+          <div class="frases-code flexbox-container">
+            <h2>Frases motivacionales</h2>
+            <p class=""><strong>04/05/2021</strong></p>
+            <p>Este es un sencillo generador de frases aleatorias de personas famosas,
+              Lo importante de esto es que se conecta mediante una <strong>API</strong> desarrollada en
+              <strong>Node js y MySql</strong>, esta se conecta a una base de datos
+              en mí servidor para realizar las consultas. <br>
+              Esta <strong>API</strong> es pública, por lo que puedes realizar tus consultas en está dirección <a
+                id="link-api"
+                href="https://hectorvaldesm.com/api/frases-motiv/"><strong>https://hectorvaldesm.com/api/frases-motiv/</strong></a>
+            </p>
+          </div>
+          <!-- *app -->
+          <div class="frases-box flexbox-container js-app">
+            <div class="frases-a">
+              <p class="frase-mot">Presiona el botón generar</p>
+              <h3 class="author"></h3>
+            </div>
+            <div class="frases-b">
+              <input type="button" value="Generar" class="btn btn-red btn-gen">
+            </div>
+          </div>
+
+          <!-- !pokeAPI -->
+          <!-- *app -->
+          <div class="poke-box js-app flexbox-container">
+            <h3 class="text-dark">Elige un Pokémon</h3>
+            <div class="poke-flex">
+              <div class="poke-datos">
+                <select name="pokeLista" id="pokeLista" class="form-select">
+                  <option value="Seleccione">Seleccione</option>
+                </select>
+                <input type="button" class="btn btn-red btn-buscar" value="Buscar">
+
+                <!-- Poke tabla -->
+                <table class="table table-striped table-sm mt-3">
+                  <tr>
+                    <th class="row-th">Tipo:</th>
+                    <td id="tipo"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Hp:</th>
+                    <td id="hp"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Ataque:</th>
+                    <td id="atk"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Defensa:</th>
+                    <td id="def"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Ataque especial:</th>
+                    <td id="atkEsp"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Defensa especial:</th>
+                    <td id="defEsp"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Velocidad:</th>
+                    <td id="vel"></td>
+                  </tr>
+                  <tr>
+                    <th class="row-th">Peso:</th>
+                    <td id="peso"></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Photos -->
+              <div class="poke-fotos">
+                <img class="poke-img" src="/img/poke-img.png" alt="pokemon photos">
+              </div>
+            </div>
+
+          </div>
+          <!-- *code -->
+          <div class="poke-code flexbox-container">
+            <h2>PokéApi</h2>
+            <p class=""><strong>26/06/2021</strong></p>
+            <p>Este es un cuadro donde puedes seleccionar un <strong>Pokémon</strong> de la primera generación y ver sus
+              <strong>Stats</strong> y su foto.
+              Lo interesante de esto es que la la lista de pokemones, las fotos y los stats son conseguidos mediante la
+              <strong>API</strong> de Pokémon.
+              Puedes revisarla en el siguiente <a id="link-api" href="https://pokeapi.co"><strong>Link</strong></a>
+            </p>
+          </div>
+          <!-- !Converter -->
+
+          <!-- *code -->
+          <div class="converter-code flexbox-container">
+            <h2>Conversor de Palabras</h2>
+            <p class=""><strong>01/11/2021</strong></p>
+            <p>Este es un sencillo conversor de palabras en el cual podremos convertir
+              <strong>minúsculas</strong> y <strong>mayúsculas</strong>.
+            </p>
+          </div>
+          <!-- *app -->
+          <div class="converter-box flexbox-container js-app">
+            <div class="converter-content">
+              <h2>Escribe tu palabra</h2>
+              <textarea name="" id="text_area_conversor" cols="60" rows="15"></textarea>
+              <br>
+              <input class="btn btn-red" type="button" name="Minúsculas" id="minusculas" value="Minúsculas">
+              <input class="btn btn-red" type="button" name="Mayúsculas" id="mayusculas" value="Mayúsculas">
+              <input class="btn btn-red" type="button" name="Limpiar" id="limpiar_texto" value="Limpiar">
+            </div>
+          </div>
+
+          <!-- !Rock-Paper_Scissor -->
+          <!-- *app -->
+          <div class="flexbox-container js-app rps-box">
+            <div class="rps__score">
+              <h3>Puntaje: <span id="rps__score"></span> </h3>
+            </div>
+            <div class="rps__enemy">
+              <img id="rps__enemy__id" src="">
+            </div>
+            <div class="rps__result">
+              <h2 id="rps__result__id"></h2>
+            </div>
+            <div class="rps__my-choice">
+              <div class="rps_choice_rock">
+                <img class="rps__img__rock" src="https://img.icons8.com/color/96/000000/hand-rock.png" />
+              </div>
+              <div class="rps_choice_paper">
+                <img class="rps__img__paper" src="https://img.icons8.com/color/96/000000/hand-cursor.png" />
+              </div>
+              <div class="rps__choice__scissors">
+                <img class="rps__img__scissor" src="https://img.icons8.com/color/96/000000/hand-peace--v2.png" />
+              </div>
+            </div>
+          </div>
+          <!-- *code -->
+          <div class="flexbox-container rps-code">
+            <h2>Piedra - Papel y Tijeras</h2>
+            <p><strong>23/01/2022</strong></p>
+            <p>El clásico minijuego de piedra, papel y tijeras hecho en <strong>Javascript</strong> y animado en
+              <strong>CSS.</strong>
+            La gracia de esto es calculo para definir el ganador, este se realiza de la siguiente manera: <br>
+          Primero se elige un numero del 1 al 3 para el enemigo, este se escoge pseudo al azar con la función <strong>Math.random()</strong> y se le asigna una foto en función del número (1 piedra, 2 papel y 3 tijeras), 
+          luego se comprueba la elección del jugador y también se le asigna un numero del 1 al 3, por último entra la función para calcular al ganador, esta realiza una <strong>resta</strong> entre 
+          los números del <strong>Enemigo</strong> y el <strong>jugador</strong>, según el resultado de esto se muestra en pantalla y se reproducen los audios si el jugador gana, pierde o empata.
+        </p>
+              <input type="button" class="btn btn-yellow btn-rps-code" value="Mostrar código">
+              <div class="bg-code div-rps-code">
+                <pre>
+                  <code class="javascript">
+// !game rock paper scissor
+// *Variables
+const img_rock = "https://img.icons8.com/color/96/000000/hand-rock.png"
+const img_paper = "https://img.icons8.com/color/96/000000/hand-cursor.png"
+const img_scissor = "https://img.icons8.com/color/96/000000/hand-peace--v2.png"
+let score_total = 0;
+let enemy_choice_number;
+let player_choice_number;
+
+const sound_win = new Audio('/img/sounds/bling.ogg');
+const sound_loose = new Audio('/img/sounds/hurt.ogg');
+const sound_tie = new Audio('/img/sounds/arrow_hit.ogg');
+
+// *Calls
+let div_choice = document.querySelector('.rps__my-choice');
+let result_battle = document.querySelector('#rps__result__id');
+let enemy_image = document.querySelector('#rps__enemy__id');
+let score_span = document.querySelector('#rps__score');
+
+// *APP
+div_choice.addEventListener("click", (e) => {
+  e.stopPropagation();
+  // *instant events
+  enemy_choice_number = enemy_choice();
+  
+
+  if (e.target.classList.contains("rps__img__rock")) {
+    document.querySelector('.rps__img__rock').classList.add('rps__image__on');
+    document.querySelector('.rps__img__paper').classList.remove('rps__image__on');
+    document.querySelector('.rps__img__scissor').classList.remove('rps__image__on');
+    player_choice_number = 1;
+  }
+  if (e.target.classList.contains("rps__img__paper")) {
+    document.querySelector('.rps__img__rock').classList.remove('rps__image__on');
+    document.querySelector('.rps__img__paper').classList.add('rps__image__on');
+    document.querySelector('.rps__img__scissor').classList.remove('rps__image__on');
+    
+    player_choice_number = 2;
+  }
+  if (e.target.classList.contains("rps__img__scissor")) {
+    document.querySelector('.rps__img__rock').classList.remove('rps__image__on');
+    document.querySelector('.rps__img__paper').classList.remove('rps__image__on');
+    document.querySelector('.rps__img__scissor').classList.add('rps__image__on');
+    
+    player_choice_number = 3;
+  }
+
+  switch(enemy_choice_number){
+    case 1: enemy_image.setAttribute('src', img_rock);
+    break;
+    case 2: enemy_image.setAttribute('src', img_paper);
+    break;
+    case 3: enemy_image.setAttribute('src', img_scissor);
+  }
+
+  winner(enemy_choice_number, player_choice_number);
+});
+
+// *function to enemy
+const enemy_choice = ()=>{
+  let num_random = 0;
+  do{
+    num_random = Math.floor(Math.random()*10);
+  }while(num_random > 3)
+  if(num_random == 0)num_random++;
+  return num_random;
+}
+
+// *function to calculete the winner
+const winner = (enemy, player)=>{
+  let result;
+  switch((enemy - player)){
+    case 0: result = "EMPATE";sound_tie.play();
+    break;
+    case -1: result = "GANAS";score_total++;sound_win.play();
+    break;
+    case -2: result = "PIERDES";score_total=0;sound_loose.play();
+    break;
+    case 1: result = "PIERDES";score_total=0;sound_loose.play();
+    break;
+    case 2: result = "GANAS";score_total++;sound_win.play();
+    break;
+  }
+  score_span.textContent = score_total;
+  result_battle.textContent = result;
+}
+                  </code>
+                </pre>
+              </div>
+          </div>
+          <!-- !Final -->
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- !Videojuegos -->
+    <section id="sec-02">
+      <div class="flexbox-games">
+        <div class="games-content">
+          <h2>Juegos desarrollados </h2>
+          <p><strong>17/08/2018</strong></p>
+          <p>Estos juegos son sencillos pero me permitieron aprender e iniciarme en el mundo de la programación. Estos
+            fueron creados con la herramienta <strong>Game Maker Studio 2</strong> y son totalmente gratis. <br>
+            Puedes revisarlos en mi página de <strong><a href="https://itch.io/profile/hvgamestudio" target="_blank"
+                rel="noopener noreferrer">Itch.io</a></strong></p>
+        </div>
+
+        <div class="games-app">
+          <div class="div-humanity" data-aos="fade-right">
+            <!-- Humanity part I -->
+            <iframe class="iframe-games" frameborder="0"
+              src="https://itch.io/embed/290990?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
+                href="https://hvgamestudio.itch.io/humanity-part-i">Humanity Part I (DEMO) by hv game
+                studio</a></iframe>
+          </div>
+          <div class="div-cachipun" data-aos="fade-right">
+            <!-- Cachipun -->
+            <iframe class="iframe-games" frameborder="0"
+              src="https://itch.io/embed/493334?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
+                href="https://hvgamestudio.itch.io/cachipun">CACHIPUN by hv game studio</a></iframe>
+          </div>
+          <div class="div-zombeast" data-aos="fade-right">
+            <!-- Zombeast -->
+            <iframe class="iframe-games" frameborder="0"
+              src="https://itch.io/embed/363084?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
+                href="https://hvgamestudio.itch.io/zombeast-underattack">ZomBeast UnderAttack by hv game
+                studio</a></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- !Boton subir -->
+    <div class="up-div">
+      <div class="up-button">
+          <i class="fas fa-chevron-up"></i>
+      </div>
+  </div>
+
+    <!-- !FOOTER -->
+    <div class="footer-basic">
+      <div class="logo-footer">
+        <img class="logo-white" src="/img/logoWhite.png" alt="logo-white">
+      </div>
+      <footer>
+        <div class="social-footer">
+          <a href="https://www.instagram.com/mushroom.47/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/h%C3%A9ctor-vald%C3%A9s-m" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.twitter.com/Mushroom0047" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.github.com/Mushroom0047" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">
+          &#169;Copyright 2022 HectorValdesM. All rights reserved. 🍄
+        </p>
+      </footer>
+    </div>
+
+</body>
+<!-- !Necesary -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/be94f8a50b.js" crossorigin="anonymous"></script>
+<script src="js/matrix.js"></script>
+
+<!-- !apps script -->
+<script src="js/littleApss/showCode.js"></script>
+<script src="js/littleApss/converter.js"></script>
+<script src="js/littleApss/manualCounter.js"></script>
+<script src="js/littleApss/motivationalQuote.js"></script>
+<script src="js/littleApss/pokeApi.js"></script>c
+<script src="js/littleApss/PomodoroTimer.js"></script>
+<script src="js/littleApss/rockPaperScissorGame.js"></script>
+<script src="js/littleApss/todoList.js"></script>
+
+<!-- !Highlights -->
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</html>

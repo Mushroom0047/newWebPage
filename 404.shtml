@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    
+</head>
+<style>
+    html{
+        background-color: black;
+    }
+    .image{
+        text-align: center;
+    }
+    .boton{
+        background-color: #dfac13;
+        border-radius: 5px;
+        border: 2px solid #dfac13;
+        color: #efefef;
+        font-family: 'Tahoma', sans-serif;
+        font-weight: bold;
+        padding: 10px 25px;
+        letter-spacing: 2px;
+    }
+    .boton:hover {
+        background-color: black;
+        border-radius: 0px; 
+        border: 2px solid #efefef;
+        color: #efefef;
+        cursor: pointer;   
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+</style>
+<body>
+    <div class="image">
+        <img src="img/giphy.webp" alt=""><br>
+        <a href="https://hectorvaldesm.com"><input class='boton' type="button" value="Volver"></a>
+    </div>
+</body>
+</html>

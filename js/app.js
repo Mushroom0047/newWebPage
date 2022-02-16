@@ -1,26 +1,4 @@
-//Animation of typewriter
-const tittleName = document.querySelector('.typewriter');
-let nombre = 'Mi nombre es Héctor ';
-let indice = 0;
-var intervalStart;
-var intervalOp;
-
-window.setTimeout(intervalWrite, 1400);
-
-function intervalWrite(){
-    intervalStart =  window.setInterval(()=>{
-        write();
-    }, 120);     
-}
-function write(){    
-    if(indice < nombre.length){
-        tittleName.innerHTML += nombre.charAt(indice);        
-        indice++;
-    }else{
-        clearInterval(intervalStart);     
-    }
-}
-// Navbar
+//!Navbar
 const btnHam = document.querySelector('.nav-hamburger');
 btnHam.addEventListener('click', openMenu);
 
@@ -31,26 +9,6 @@ function openMenu(){
     } else {
         menuHam.className = "nav-menu";
     }
-}
-
-
-//Loader page
-window.onload = ()=>{
-    window.setTimeout(loading, 1300);
-
-function loading(){
-    let loading = document.querySelector('.loading');
-    let i = 10;
-    intervalOp = window.setInterval(()=>{
-        loading.style.opacity = i / 10;
-        i--;
-        if(i <= 0){
-            loading.style.display = 'none';
-            clearInterval(intervalOp);
-        }
-    }, 40);
-    
-};
 }
 
 //up effect
@@ -69,25 +27,6 @@ document.querySelector('.up-div').addEventListener('click', ()=>{
     });
 });
 
-//Change the envelope 
-let envelope = document.querySelector('.sobre-icono');
-envelope.addEventListener('mouseenter', ()=>{
-    if(envelope.classList.contains('fa-envelope')){
-        envelope.classList.replace('fa-envelope', 'fa-envelope-open');
-    }
-});
-envelope.addEventListener('mouseleave', ()=>{
-    if(envelope.classList.contains('fa-envelope-open')){
-        envelope.classList.replace('fa-envelope-open','fa-envelope');
-    }
-});
-
-
-
-// !Audio Dross
-let imgMe = document.querySelector(".image-me");
-const audioDross = new Audio('/img/Sonido de piano de Dross.wav');
-
-imgMe.addEventListener('mouseover', ()=>{
-    audioDross.play();
-})
+function onSubmit(token) {
+  document.getElementById("contact-form").submit();
+}
