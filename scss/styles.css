@@ -837,14 +837,14 @@ p {
   margin-bottom: 20px;
 }
 
-.show {
-  display: none;
-}
-
-.hide {
+.show_code__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hide {
+  display: none;
 }
 
 .bg-code {
