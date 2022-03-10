@@ -30,3 +30,23 @@ document.querySelector('.up-div').addEventListener('click', ()=>{
 function onSubmit(token) {
   document.getElementById("contact-form").submit();
 }
+
+let buttonShowJS = document.querySelector('.btn__show__js');
+let boxJsCode = document.querySelector('.flexbox-js');
+
+let stateDiv = 0;
+buttonShowJS.addEventListener("click", () => {
+    switch(stateDiv){
+        case 0:
+            stateDiv = 1;
+            boxJsCode.classList.add("show");
+            boxJsCode.classList.remove("hide");
+            break;
+        case 1:
+            stateDiv = 0;
+            boxJsCode.classList.add("hide");
+            boxJsCode.classList.remove("show");
+            break;
+    }
+});
+

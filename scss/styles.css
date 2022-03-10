@@ -231,6 +231,7 @@ nav {
 h1 {
   color: #efefef;
   font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -263,6 +264,11 @@ p {
   color: #efefef;
   font-family: 'Roboto', sans-serif;
   line-height: 130%;
+}
+
+.subtitulo {
+  text-align: center;
+  padding: 0 30px;
 }
 
 .titulo {
@@ -309,6 +315,11 @@ p {
   font-weight: bold;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.show_code {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -549,7 +560,8 @@ p {
     width: 100%;
   }
   .sobremi-div .descip-div, .sobremi-div .image-div {
-    width: 100%;
+    margin: auto;
+    width: 80%;
   }
 }
 
@@ -565,6 +577,7 @@ p {
 
 .flex-knowledge .knowledge-item img {
   width: 64px;
+  cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -822,6 +835,16 @@ p {
 .flexbox-website .paginas-web .box-content .button-content {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.show {
+  display: none;
+}
+
+.hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bg-code {
@@ -1244,6 +1267,7 @@ strong {
 
 a {
   text-decoration: none;
+  color: #dfac13;
 }
 
 hr {

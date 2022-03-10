@@ -63,7 +63,7 @@
           </div>
           <div class="titulo-hero">
             <h1>Frontend Developer</h1>
-            <p>Trabajos y proyectos realizados</p>
+            <h2>Trabajos y proyectos realizados</h2>
           </div>
         </div>
       </div>
@@ -243,10 +243,14 @@
         <hr>
         <br>
 
-    <section id="sec-01">
-      <div class="javascript-section">
-        <h2 class="main-tittle">~ Proyectos en JavaScript ~</h2>
-        <div class="flexbox-js">
+        <section id="sec-01">
+          <div class="javascript-section">
+            <h2 class="main-tittle">~ Proyectos en JavaScript ~</h2>
+            <p class="subtitulo">En esta sección están los proyectos pequeños que hice para practicar <strong>JavaScript</strong>.</p>
+            <div class="show_code">
+              <input type="button" value="Mostrar Más" class="btn btn-yellow btn__show__js">
+            </div>
+        <div class="flexbox-js show">
           <!-- !Contador manual -->
           <!-- *app -->
           <div class="js-app counter-box flexbox-container">
@@ -262,32 +266,6 @@
             <p>Contador manual, hecho para primeros usos del DOM en <strong>Javascript</strong>, Botón Aumentar suma 1 a
               valor de variable y botón Disminuir resta 1 al valor mientras sea mayor que 0.</p>
             <input type="button" class="btn btn-yellow btn-counter-code" value="Mostrar código">
-            <div class="bg-code div-counter-code">
-              <pre>
-              <code class="javascript">
-      //Manual counter
-      const container = document.querySelector('.counter-box');
-      const digit = document.querySelector('.digito');
-      let counter = 0;
-      
-      container.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (e.target.classList.contains('btnAumentar')) {
-        counter++;
-        digit.textContent = counter;
-      }
-      if (e.target.classList.contains('btnDisminuir')) {
-        if (counter > 0) {
-            counter--;
-        } else {
-            counter = 0;
-        }
-        digit.textContent = counter;
-                      }
-                  });
-              </code>
-            </pre>
-            </div>
           </div>
 
           <!-- !TO-DO list           -->
@@ -299,60 +277,6 @@
               tarea
               esta se tacha y se cambia el fondo, al presionar el el icono de basura eliminamos la tarea.</p>
             <input type="button" class="btn btn-yellow btn-todo-code" value="Mostrar código">
-            <div class="bg-code div-todo-code">
-              <pre>
-            <code class="javascript">
-      //Todo list
-      //Crear boton eliminar al final de los li
-      const btnAdd = document.querySelector("#boton-ingreso");
-      const myList = document.querySelector(".miLista");
-      let txtBox = document.querySelector("#txt-in");
-      
-      //guardar texto al presionar boton
-      btnAdd.addEventListener('click', () => {
-      addTodoList();
-      });
-      txtBox.addEventListener('keyup', e => {
-      if (e.keyCode === 13) {
-          addTodoList();
-      }
-      });
-      function addTodoList() {
-      let txt = txtBox.value;
-      if (txt != '') {
-          addList(txt);
-          document.querySelector("#txt-in").value = '';
-      }
-      }
-      
-      //Check li presed
-      myList.addEventListener("click", e => {
-      //check the list
-      if (e.target.classList.contains('li-todo')) {
-          e.target.classList.toggle('complete-list');
-      }
-      //check trash
-      if (e.target.classList.contains('fa-trash-alt')) {
-          e.target.parentNode.remove();
-      }
-      });
-      
-      //Construct list
-      function addList(txt) {
-      let createLi = document.createElement("LI");//create li element
-      let content = document.createTextNode(txt);//create li content
-      createLi.appendChild(content);//add content to li
-      createLi.className = "li-todo";
-      
-      let createDeleteIcon = document.createElement("i");//create icon element
-      createDeleteIcon.className = "fas fa-trash-alt";
-      
-      myList.appendChild(createLi);
-      createLi.appendChild(createDeleteIcon);
-      }
-            </code>
-          </pre>
-            </div>
           </div>
           <!-- *app -->
           <div class="js-app todo-box flexbox-container">
@@ -424,168 +348,6 @@
               Existe un bloque con tareas el cual podemos agregar con el cuadro de texto.
             </p>
             <input type="button" class="btn btn-yellow btn-pom-code" value="Mostrar código">
-            <div class="bg-code div-pom-code">
-              <pre>
-              <code class="javascript">
-      // Pomodoro timer
-      const btnStartPom = document.querySelector('.btn-startPom');
-      const btnStopPom = document.querySelector('.btn-stopPom');
-      const btnTakeBreak = document.querySelector('.btn-breakPom');
-      //task
-      let taskLabel = document.querySelector('.taskPom');
-      const taskInput = document.querySelector('.inputTaskPom');
-      const btnEnterTask = document.querySelector('.btn-taskPom');
-      const audioPom = document.querySelector('.ringBell');
-      let bgDivPom = document.querySelector('.pom-div');
-      let cyclePom = document.querySelector('.cyclePom');
-      let bgDivTask = document.querySelector('.taskBG');
-      // Use Variables
-      let cycleValue = 0;
-      let timePom = 25* 60;
-      let timeShortBreak = 5 * 60;
-      let timeLongBreak = 15 * 60;
-      let timeBreakUse = timeShortBreak;
-      const countDownEl = document.querySelector('.timer');
-      const countDownBreakEl = document.querySelector('.breakTimer');
-      let pomIsPlaying = false;
-      let intervalID;
-      
-      //Enter a task button
-      btnEnterTask.addEventListener('click', () => {
-          addTask();
-      });
-      taskInput.addEventListener('keyup', e => {
-          if (e.keyCode === 13) {
-              addTask();
-          }
-      });
-      
-      //Start countdown button
-      btnStartPom.addEventListener('click', () => {
-          if (pomIsPlaying) {//Pause
-              clearInterval(intervalID);
-              btnStartPom.innerHTML = "Comenzar";
-              document.querySelector('.btn-stopPom').disabled = true;
-              pomIsPlaying = false;
-          } else {// Play
-              pomStyle("pom");
-              stopBreak();
-              intervalID = setInterval(updateCountDown, 1000);
-              btnStartPom.innerHTML = "Pausar";
-              document.querySelector('.btn-stopPom').disabled = false;
-              pomIsPlaying = true;
-          }
-      });
-      
-      
-      // Take a break button
-      btnTakeBreak.addEventListener('click', () => {
-          stopTimer();
-          pomStyle("break");
-          checkBreakTime(); 
-          intervalID = setInterval(updateBreakCountDown, 1000);
-          btnTakeBreak.disabled = true;
-          btnStopPom.disabled = false;
-      });
-      
-      // Stop timer
-      btnStopPom.addEventListener('click', () => {
-          if(pomIsPlaying){
-              stopTimer();
-              audioPom.play();
-          }else{
-              stopBreak();
-          }
-          
-      });
-      
-      //----------------------------FUNCTIONS-----------------------------
-      
-      // Update pom
-      function updateCountDown() {
-          if (timePom >= 0) {
-              const minutes = Math.floor(timePom / 60);
-              let seconds = timePom % 60;
-              seconds = seconds < 10 ? '0' + seconds : seconds;
-              countDownEl.innerHTML = minutes + ":" + seconds;
-              timePom--;
-          } else {
-              pomcomplete();
-              stopTimer();
-          }
-      }
-      function updateBreakCountDown(){
-          if (timeBreakUse >= 0) {
-              const minutes = Math.floor(timeBreakUse / 60);
-              let seconds = timeBreakUse % 60;
-              seconds = seconds < 10 ? '0' + seconds : seconds;
-              countDownBreakEl.innerHTML = minutes + ":" + seconds;
-              timeBreakUse--;
-          } else {       
-              audioPom.play(); 
-              stopBreak();
-          }
-      }
-      function stopBreak(){    
-          btnTakeBreak.disabled = false;
-          btnStopPom.disabled = true;
-          timeBreakUse = timeShortBreak;
-          countDownBreakEl.innerHTML = '05:00';
-          clearInterval(intervalID);
-      }
-      
-      // Reset cycle conter
-      const resetCounter = document.querySelector('.fa-sync-alt');
-      resetCounter.addEventListener('click', () => {
-          cycleValue = 0;
-          cyclePom.innerHTML = cycleValue;
-      });
-      
-      //If time is equal than zero
-      function pomcomplete() {
-          audioPom.play();
-          cycleValue++;
-          cyclePom.innerHTML = cycleValue;
-      }
-      // Stop pom function
-      function stopTimer() {
-          clearInterval(intervalID);
-          timePom = 25 * 60;
-          btnStopPom.disabled = true;
-          btnStartPom.innerHTML = "Comenzar";
-          btnTakeBreak.innerHTML = "Descansar";
-          countDownEl.innerHTML = '25:00';
-      }
-      //Pom style
-      function pomStyle(type){
-          if(type === "pom"){
-              bgDivPom.classList.add('bg-danger');
-              bgDivPom.classList.remove('bg-success');
-              bgDivTask.classList.add('task-div-red');
-              bgDivTask.classList.remove('task-div-green');
-          }else if (type === "break"){
-              bgDivPom.classList.remove('bg-danger');
-              bgDivPom.classList.add('bg-success');
-              bgDivTask.classList.remove('task-div-red');
-              bgDivTask.classList.add('task-div-green');
-          }
-      }
-      function checkBreakTime(){
-          if(cycleValue % 3 == 0 && cycleValue != 0 ){        
-              timeBreakUse = timeLongBreak;
-          }else{
-              timeBreakUse = timeShortBreak;
-          }
-      }
-      //Add task
-      function addTask() {
-          let task = taskInput.value;
-          taskLabel.innerHTML = task;
-          document.querySelector('.inputTaskPom').value = '';
-      }
-              </code>
-            </pre>
-            </div>
           </div>
 
           <!-- !Frases motivacionales -->
@@ -735,99 +497,7 @@
           luego se comprueba la elección del jugador y también se le asigna un numero del 1 al 3, por último entra la función para calcular al ganador, esta realiza una <strong>resta</strong> entre 
           los números del <strong>Enemigo</strong> y el <strong>jugador</strong>, según el resultado de esto se muestra en pantalla y se reproducen los audios si el jugador gana, pierde o empata.
         </p>
-              <input type="button" class="btn btn-yellow btn-rps-code" value="Mostrar código">
-              <div class="bg-code div-rps-code">
-                <pre>
-                  <code class="javascript">
-// !game rock paper scissor
-// *Variables
-const img_rock = "https://img.icons8.com/color/96/000000/hand-rock.png"
-const img_paper = "https://img.icons8.com/color/96/000000/hand-cursor.png"
-const img_scissor = "https://img.icons8.com/color/96/000000/hand-peace--v2.png"
-let score_total = 0;
-let enemy_choice_number;
-let player_choice_number;
-
-const sound_win = new Audio('/img/sounds/bling.ogg');
-const sound_loose = new Audio('/img/sounds/hurt.ogg');
-const sound_tie = new Audio('/img/sounds/arrow_hit.ogg');
-
-// *Calls
-let div_choice = document.querySelector('.rps__my-choice');
-let result_battle = document.querySelector('#rps__result__id');
-let enemy_image = document.querySelector('#rps__enemy__id');
-let score_span = document.querySelector('#rps__score');
-
-// *APP
-div_choice.addEventListener("click", (e) => {
-  e.stopPropagation();
-  // *instant events
-  enemy_choice_number = enemy_choice();
-  
-
-  if (e.target.classList.contains("rps__img__rock")) {
-    document.querySelector('.rps__img__rock').classList.add('rps__image__on');
-    document.querySelector('.rps__img__paper').classList.remove('rps__image__on');
-    document.querySelector('.rps__img__scissor').classList.remove('rps__image__on');
-    player_choice_number = 1;
-  }
-  if (e.target.classList.contains("rps__img__paper")) {
-    document.querySelector('.rps__img__rock').classList.remove('rps__image__on');
-    document.querySelector('.rps__img__paper').classList.add('rps__image__on');
-    document.querySelector('.rps__img__scissor').classList.remove('rps__image__on');
-    
-    player_choice_number = 2;
-  }
-  if (e.target.classList.contains("rps__img__scissor")) {
-    document.querySelector('.rps__img__rock').classList.remove('rps__image__on');
-    document.querySelector('.rps__img__paper').classList.remove('rps__image__on');
-    document.querySelector('.rps__img__scissor').classList.add('rps__image__on');
-    
-    player_choice_number = 3;
-  }
-
-  switch(enemy_choice_number){
-    case 1: enemy_image.setAttribute('src', img_rock);
-    break;
-    case 2: enemy_image.setAttribute('src', img_paper);
-    break;
-    case 3: enemy_image.setAttribute('src', img_scissor);
-  }
-
-  winner(enemy_choice_number, player_choice_number);
-});
-
-// *function to enemy
-const enemy_choice = ()=>{
-  let num_random = 0;
-  do{
-    num_random = Math.floor(Math.random()*10);
-  }while(num_random > 3)
-  if(num_random == 0)num_random++;
-  return num_random;
-}
-
-// *function to calculete the winner
-const winner = (enemy, player)=>{
-  let result;
-  switch((enemy - player)){
-    case 0: result = "EMPATE";sound_tie.play();
-    break;
-    case -1: result = "GANAS";score_total++;sound_win.play();
-    break;
-    case -2: result = "PIERDES";score_total=0;sound_loose.play();
-    break;
-    case 1: result = "PIERDES";score_total=0;sound_loose.play();
-    break;
-    case 2: result = "GANAS";score_total++;sound_win.play();
-    break;
-  }
-  score_span.textContent = score_total;
-  result_battle.textContent = result;
-}
-                  </code>
-                </pre>
-              </div>
+              <input type="button" class="btn btn-yellow btn-rps-code" value="Mostrar código">      
           </div>
           <!-- !Final -->
         </div>
@@ -850,23 +520,15 @@ const winner = (enemy, player)=>{
         <div class="games-app">
           <div class="div-humanity" data-aos="fade-right">
             <!-- Humanity part I -->
-            <iframe class="iframe-games" frameborder="0"
-              src="https://itch.io/embed/290990?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
-                href="https://hvgamestudio.itch.io/humanity-part-i">Humanity Part I (DEMO) by hv game
-                studio</a></iframe>
+            <iframe class="iframe-games"frameborder="0" src="https://itch.io/embed/290990?dark=true" ><a href="https://hvgamestudio.itch.io/humanity-part-i">Humanity Part I (DEMO) by hv game studio</a></iframe>
           </div>
           <div class="div-cachipun" data-aos="fade-right">
             <!-- Cachipun -->
-            <iframe class="iframe-games" frameborder="0"
-              src="https://itch.io/embed/493334?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
-                href="https://hvgamestudio.itch.io/cachipun">CACHIPUN by hv game studio</a></iframe>
+            <iframe class="iframe-games"frameborder="0" src="https://itch.io/embed/493334?dark=true" ><a href="https://hvgamestudio.itch.io/cachipun">CACHIPUN by hv game studio</a></iframe>
           </div>
           <div class="div-zombeast" data-aos="fade-right">
             <!-- Zombeast -->
-            <iframe class="iframe-games" frameborder="0"
-              src="https://itch.io/embed/363084?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=dfac13&amp;border_color=dfac13"><a
-                href="https://hvgamestudio.itch.io/zombeast-underattack">ZomBeast UnderAttack by hv game
-                studio</a></iframe>
+            <iframe class="iframe-games"frameborder="0" src="https://itch.io/embed/363084?dark=true" ><a href="https://hvgamestudio.itch.io/zombeast-underattack">ZomBeast UnderAttack by hv game studio</a></iframe>
           </div>
         </div>
       </div>
@@ -908,7 +570,6 @@ const winner = (enemy, player)=>{
 <script src="js/matrix.js"></script>
 
 <!-- !apps script -->
-<script src="js/littleApss/showCode.js"></script>
 <script src="js/littleApss/converter.js"></script>
 <script src="js/littleApss/manualCounter.js"></script>
 <script src="js/littleApss/motivationalQuote.js"></script>
@@ -916,11 +577,5 @@ const winner = (enemy, player)=>{
 <script src="js/littleApss/PomodoroTimer.js"></script>
 <script src="js/littleApss/rockPaperScissorGame.js"></script>
 <script src="js/littleApss/todoList.js"></script>
-
-<!-- !Highlights -->
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 </html>
